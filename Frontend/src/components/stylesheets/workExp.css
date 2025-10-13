@@ -1,0 +1,19 @@
+#workExp {
+    margin: auto;
+    text-align: center;
+}
+
+iframe{
+    width: 50vw;
+    height: 90vh;
+}
+
+#workExp h2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.3em;
+    font-family: 'Skeina', sans-serif;
+}

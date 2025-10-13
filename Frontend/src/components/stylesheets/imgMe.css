@@ -1,0 +1,13 @@
+.imgMe{
+    width: 12em;
+    border-radius: 3em;
+    position: relative;
+    top: 4em;
+    left: 5em;
+    padding: 0.5em;
+    border: 1px solid #4e5648e6;
+}
+
+body.darkMode .imgMe{
+    border: 1px solid white;
+}

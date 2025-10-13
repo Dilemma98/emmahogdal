@@ -1,0 +1,47 @@
+@import url('https://fonts.cdnfonts.com/css/skeina');
+header{
+    display: flex;
+    border-bottom: 1px solid rgb(152, 161, 152);
+    letter-spacing: 0.2em;
+}
+
+header h1 a{
+    margin-left: 0.8em;
+    font-size: 1.8em;
+    font-weight: 100;
+}
+
+.navBar ul{
+    font-size: 1em;
+    display: flex;
+    gap: 2em;
+    margin-top: 3em;
+    margin-left: 25em;
+}
+
+.navBar li{
+    list-style: none;
+}
+
+.navBar a, header h1 a{
+    text-decoration: none;
+}
+
+
+header h1 a:hover, li:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #4e5648e6;
+    font-weight: 900;
+}
+
+body.darkMode header h1 a:hover, body.darkMode li:hover{
+    border-bottom: 2px solid white;
+}
+
+h1, ul {
+    font-family: 'Skeina', sans-serif;
+}
+
+body.darkMode header{
+    border-bottom: 1px solid white;
+}

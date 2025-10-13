@@ -1,0 +1,10 @@
+.darkmodeLightmodeBtn{
+    font-size: 2em;
+    position: fixed;
+    right: 0.5em;
+    bottom: 0.5em;
+}
+
+.darkmodeLightmodeBtn:hover {
+    cursor: pointer;
+}
