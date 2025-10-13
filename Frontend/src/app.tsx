@@ -3,11 +3,11 @@ import Header from "./components/header";
 import StartPage from "./pages/startpage";
 import EducationPage from "./pages/educationpage";
 import WorkExpPage from "./pages/workexppage";
-import "../src/components/stylesheets/header.css";
+import "./components/stylesheets/header.css";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/EmmaHoegdal">
       <Header /> {/* Header syns på alla sidor */}
       <Routes>
         <Route path="/" element={<StartPage />} />
