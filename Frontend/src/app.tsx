@@ -7,8 +7,8 @@ import "./components/stylesheets/header.css";
 
 const App = () => {
   return (
-    <Router basename="/EmmaHoegdal">
-      <Header /> {/* Header syns på alla sidor */}
+    <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<StartPage />} />
         <Route path="/education" element={<EducationPage />} />
