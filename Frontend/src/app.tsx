@@ -7,7 +7,7 @@ import "./components/stylesheets/header.css";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/emmahoegdal">
       <Header />
       <Routes>
         <Route path="/" element={<StartPage />} />
