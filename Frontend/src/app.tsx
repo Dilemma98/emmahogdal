@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import StartPage from "./pages/startpage";
 import EducationPage from "./pages/educationpage";
@@ -7,7 +7,7 @@ import "./components/stylesheets/header.css";
 
 const App = () => {
   return (
-    <Router basename="/emmahoegdal">
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<StartPage />} />

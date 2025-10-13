@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/skeina');
 header{
     display: flex;
-    border-bottom: 1px solid rgb(152, 161, 152);
+    border-bottom: 1px solid #98a198;
     letter-spacing: 0.2em;
 }
 
