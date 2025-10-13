@@ -12,11 +12,11 @@ header h1 a{
 }
 
 .navBar ul{
-    font-size: 1em;
+    font-size: 0.8em;
     display: flex;
-    gap: 2em;
+    gap: 4em;
     margin-top: 3em;
-    margin-left: 26em;
+    margin-left: 24em;
 }
 
 .navBar li{

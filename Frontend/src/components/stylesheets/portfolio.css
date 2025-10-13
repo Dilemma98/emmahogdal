@@ -1,0 +1,18 @@
+#portfolio h2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.3em;
+    font-family: 'Skeina', sans-serif;
+}
+
+#portfolio .info{
+    width: 40vw;
+    height: 55vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    font-size: 1.16em;
+}
