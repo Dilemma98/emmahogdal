@@ -1,6 +1,7 @@
 const About = () => {
     return (
         <div>
+            
             <h2>About me</h2>
             <div className="info">
                 <p>My name is Emma, a web development student since 

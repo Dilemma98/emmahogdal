@@ -1,8 +1,10 @@
+#portfolio{
+    text-align: center;
+}
 #portfolio h2{
     margin-left: auto;
     margin-right: auto;
     width: 10em;
-    text-align: center;
     font-weight: 100;
     font-size: 2.3em;
     font-family: 'Skeina', sans-serif;
@@ -10,9 +12,72 @@
 
 #portfolio .info{
     width: 40vw;
-    height: 55vh;
+    height: 25vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.5em;
     font-size: 1.16em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 4em;
+    margin: -1em auto 5em auto;
+    width: 80%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.projectCard {
+    background: #ffffff49;
+    width: 15em;
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.projectCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0.8em;
+    margin-bottom: 1em;
+}
+
+/* Projektets titel */
+.projects h3 {
+    font-family: 'Skeina', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+/* Beskrivningstext (om du lägger till p senare) */
+.projectCard p {
+    font-size: 0.95em;
+    line-height: 1.4;
+    margin-bottom: 3em;
+}
+
+#portfolio a {
+    font-size: 0.9em;
+    text-decoration: none;
+    position: relative;
+    bottom: 0.5em;
+    color: #fff;
+    background: #545454;
+    padding: 0.5em 0.5em;
+    border-radius: 5em;
+    transition: background 0.3s ease;
+}
+
+#portfolio a:hover {
+    background: #4a4a4a;
 }
