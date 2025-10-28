@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 4em;
-    margin: -1em auto 5em auto;
+    margin: -5em auto 5em auto;
     width: 80%;
     max-width: 1000px;
     text-align: center;

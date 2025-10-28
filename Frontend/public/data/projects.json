@@ -16,5 +16,11 @@
         "description": "A React-based app for booking spa treatments, built with React, TypeScript, Vite, and Tailwind CSS.",
         "image": "images/StudioSpa.png",
         "link": "https://github.com/Dilemma98/SpaMedSpa"
+    },
+    {
+        "title": "Tramsrapporten",
+        "description": "A Vue project with Google login, created to maintain and build knowledge over the summer break between the first and second year of studies.",
+        "image": "images/Tramsrapporten.png",
+        "link": "https://github.com/Dilemma98/SummerGroupProject"
     }
 ]
