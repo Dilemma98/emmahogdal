@@ -1,4 +1,4 @@
-import "../components/stylesheets/switch.css";
+import "../stylesheets/switch.css";
 import { useState, useEffect } from "react";
 
 const Switch = () => {

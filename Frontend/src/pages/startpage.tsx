@@ -1,5 +1,5 @@
 import MainPart from "../components/mainpart";
-import "../components/stylesheets/startPage.css";
+import "../stylesheets/startPage.css";
 import Switch from "../components/switch";
 
 const StartPage = () => {

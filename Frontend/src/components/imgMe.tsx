@@ -1,5 +1,5 @@
-import imgUrl from "../assets/images/imgMe.jpg";
-import "../components/stylesheets/imgMe.css";
+import imgUrl from "../assets/images/imgMe3.jpg";
+import "../stylesheets/imgMe.css";
 
 const ImgMe = () => {
     return(

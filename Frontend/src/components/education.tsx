@@ -16,7 +16,7 @@ const Education = () => {
                     frameBorder="0"
                     scrolling="no"
                     width="100%"
-                    height="600px"
+                    height="600"
                     ></iframe>
             </div>
         </div>

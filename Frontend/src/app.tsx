@@ -4,7 +4,7 @@ import StartPage from "./pages/startpage";
 import EducationPage from "./pages/educationpage";
 import WorkExpPage from "./pages/workexppage";
 import PortfolioPage from "./pages/portfoliopage";
-import "./components/stylesheets/header.css";
+import "./stylesheets/header.css";
 
 const App = () => {
   return (

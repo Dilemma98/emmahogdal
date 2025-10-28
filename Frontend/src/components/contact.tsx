@@ -1,4 +1,4 @@
-import "../components/stylesheets/mainpart.css";
+import "../stylesheets/mainpart.css";
 const ContactMe = () => {
     return (
         <div id="contactMe">

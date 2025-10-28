@@ -1,6 +1,6 @@
 import Education from "../components/education";
 import Switch from "../components/switch";
-import "../components/stylesheets/education.css";
+import "../stylesheets/education.css";
 
 const EducationPage = () => {
     return (
