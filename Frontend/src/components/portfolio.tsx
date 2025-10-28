@@ -1,4 +1,4 @@
-import "../components/stylesheets/portfolio.css";
+import "../stylesheets/portfolio.css";
 import { useEffect, useState } from "react";
 import Switch from "./switch";
 
@@ -15,7 +15,7 @@ const Portfolio = () => {
 
     // Fetching projects from json-file
     useEffect(() => {
-        fetch('src/data/projects.json')
+        fetch(import.meta.env.BASE_URL + 'data/projects.json')
         .then(res => res.json())
         .then(data => setProjects(data))
         .catch(error => console.error("Fel vid hämtning:", error));
@@ -29,8 +29,7 @@ const Portfolio = () => {
                 {projects.map((project, index) => (
                     <div className="projectCard" key={index}>
                         <h3>{project.title}</h3>
-                        <img src={project.image} alt={project.title} />
-                        
+                        <img src={import.meta.env.BASE_URL + project.image} alt={project.title} />
                         <p>{project.description}</p>
                         <a href={project.link} target="_blank">GitHub</a>
                     </div>

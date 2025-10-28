@@ -18,6 +18,7 @@ header h1 a{
     gap: 4em;
     margin-top: 3em;
     margin-left: 24em;
+    font-weight: 500;
 }
 
 .navBar li{

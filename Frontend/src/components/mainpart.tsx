@@ -1,4 +1,4 @@
-import "../components/stylesheets/mainpart.css";
+import "../stylesheets/mainpart.css";
 import ContactMe from "./contact";
 import AboutMe from "./about";
 import ImgMe from "../components/imgMe";

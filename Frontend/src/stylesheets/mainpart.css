@@ -4,7 +4,7 @@
     height: 55vh;
     display: flex;
     margin-top: 1em;
-    margin-left: -9em;
+    margin-left: -5em;
     gap: 4em;
     font-size: 1.16em;
 }
@@ -20,7 +20,7 @@
     margin-right: auto;
     width: 6em;
     text-align: center;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 2em;
     font-family: 'Skeina', sans-serif;
 }

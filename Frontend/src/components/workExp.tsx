@@ -1,4 +1,4 @@
-import "../components/stylesheets/workExp.css";
+import "../stylesheets/workExp.css";
 import {useState} from "react";
 import LoadingSpinner from "./loadingSpinner";
 import workExpPDF from "../files/Emma Högdal Jobb.pdf";
