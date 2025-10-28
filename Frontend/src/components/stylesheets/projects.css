@@ -1,12 +1,10 @@
 .mainContent{
-    margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
 .mainContent h2 {
-    margin-top: 1em;
     font-weight: 100;
     font-size: 2em;
     width: 6em;
