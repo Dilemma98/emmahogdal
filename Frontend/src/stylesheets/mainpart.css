@@ -3,16 +3,45 @@
     width: 100vw;
     height: 55vh;
     display: flex;
-    margin-top: 5em;
-    margin-left: -7em;
+    margin-top: 2.5em;
+    margin-left: -8em;
     gap: 4em;
     font-size: 1.16em;
 }
 
-.text{
+.text, .techStack{
     display: flex;
     flex-direction: column;
     width: 40vw;
+}
+
+.techStack{
+margin-bottom: 1em;
+}
+
+.tech-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-bubbles span {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f2f2f2;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  /* transition: all 0.2s ease; */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tech-bubbles span:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
 
 .mainPart h2{
@@ -23,6 +52,17 @@
     font-weight: 500;
     font-size: 2em;
     font-family: 'Skeina', sans-serif;
+}
+
+.mainPart h3, .aboutHeader{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -0.1em;
+    width: 6em;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Skeina', sans-serif;
+    font-size: 1.5em;
 }
 
 .mainPart:hover{
@@ -46,4 +86,14 @@ a:visited{
 body.darkMode a,
 body.darkMode a:visited{
     color: white;
+}
+
+body:not(.darkMode) .tech-bubbles span {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #333;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body:not(.darkMode) .tech-bubbles span:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
