@@ -12,22 +12,6 @@ const About = () => {
           contribute to innovative digital projects while continuously expanding
           my skills and knowledge.
         </p>
-        <div className="techStack">
-          <h3>Tech stack</h3>
-          <div className="tech-bubbles">
-            <span>C#</span>
-            <span>.NET</span>
-            <span>REST API</span>
-            <span>JavaScript</span>
-            <span>TypeScript</span>
-            <span>React</span>
-            <span>Vue</span>
-            <span>Angular</span>
-            <span>Tailwind CSS</span>
-            <span>Bootstrap</span>
-            <span>Azure</span>
-          </div>
-        </div>
       </div>
     </div>
   );

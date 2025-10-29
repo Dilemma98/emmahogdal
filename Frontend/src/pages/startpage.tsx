@@ -7,7 +7,6 @@ const StartPage = () => {
     return (
         <>
             <div className="startMain">
-
                  <MainPart />
             </div>
             <Switch />
