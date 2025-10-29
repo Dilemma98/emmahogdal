@@ -11,8 +11,8 @@ const MainPart = () => {
            <div className="text">
             <AboutMe />
             <TechStack />
-            <ContactMe />
            </div>
+           <ContactMe />
         </div>
     );
 }

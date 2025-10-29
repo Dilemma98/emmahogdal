@@ -1,11 +1,11 @@
 .mainPart{
     justify-content: center;
-    width: 100vw;
+    width: 90vw;
     height: 55vh;
     display: flex;
-    margin-top: 2.5em;
-    margin-left: -8em;
-    gap: 4em;
+    margin-top: 3.5em;
+    margin-left: 5em;
+    gap: 7em;
     font-size: 1.16em;
 }
 
@@ -23,7 +23,7 @@ margin-bottom: 1em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   margin-top: 1rem;
 }
 
@@ -65,13 +65,17 @@ margin-bottom: 1em;
     font-size: 1.5em;
 }
 
+.contactMe {
+  margin-top: 6em;
+}
+
 .mainPart:hover{
     cursor: default;
 }
 
 .links{
     display: flex;
-    gap: 2em;
+    gap: 2.5em;
     justify-content: center;
 }
 

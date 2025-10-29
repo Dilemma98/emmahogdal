@@ -1,7 +1,8 @@
 import "../stylesheets/mainpart.css";
+
 const ContactMe = () => {
     return (
-        <div id="contactMe">
+        <div className="contactMe">
             <h2>Contact me</h2>
             <div className="links">
                 <a href="mailto:emmaah98@outlook.com" target="_blank"><i className="fa-solid fa-envelope"></i></a>
