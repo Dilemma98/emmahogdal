@@ -16,6 +16,8 @@ const About = () => {
           <h3>Tech stack</h3>
           <div className="tech-bubbles">
             <span>C#</span>
+            <span>.NET</span>
+            <span>REST API</span>
             <span>JavaScript</span>
             <span>TypeScript</span>
             <span>React</span>
@@ -23,6 +25,7 @@ const About = () => {
             <span>Angular</span>
             <span>Tailwind CSS</span>
             <span>Bootstrap</span>
+            <span>Azure</span>
           </div>
         </div>
       </div>
