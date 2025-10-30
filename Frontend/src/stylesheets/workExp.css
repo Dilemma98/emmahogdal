@@ -18,3 +18,16 @@ iframe{
     font-size: 2.3em;
     font-family: 'Skeina', sans-serif;
 }
+
+@media screen and (max-width: 800px) {
+    #workExp h2 {
+        font-size: 1.8em;
+        width: auto;
+        margin-top: 1.5em;
+    }
+
+    #workExp iframe {
+        width: 80vw;
+    }
+
+}

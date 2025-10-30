@@ -3,7 +3,7 @@
     text-align: center;
 }
 
-#education h2{
+#education h2 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
@@ -12,4 +12,17 @@
     font-weight: 100;
     font-size: 2.3em;
     font-family: 'Skeina', sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+    #education h2 {
+        font-size: 1.8em;
+        width: auto;
+        margin-top: 1.5em;
+    }
+
+    #education iframe {
+        width: 80vw;
+    }
+
 }
