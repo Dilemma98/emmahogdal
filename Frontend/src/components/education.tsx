@@ -11,7 +11,7 @@ const Education = () => {
                 {/* <iframe onLoad={() => setLoading(false)} src="https://1drv.ms/b/s!AtNZeOFOp3hOgS5pIZgksuMTaMrA?embed=1&em=2" frameBorder="0"
                     scrolling="no"></iframe> */}
                     <iframe onLoad={() => setLoading(false)} 
-                    src="/emmahogdal/files/Emma%20Högdal%20Utb.pdf"
+                   src={`${import.meta.env.BASE_URL}files/Emma%20Högdal%20Utb.pdf`}
                     frameBorder="0"
                     scrolling="no"
                     width="100%"

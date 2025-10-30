@@ -14,7 +14,7 @@ const WorkExp = () => {
                     scrolling="no"></iframe> */}
         <iframe
           onLoad={() => setLoading(false)}
-          src="/emmahogdal/files/Emma%20Högdal%20Jobb.pdf"
+          src={`${import.meta.env.BASE_URL}files/Emma%20Högdal%20Jobb.pdf`}
           frameBorder="0"
           scrolling="no"
           width="100%"
