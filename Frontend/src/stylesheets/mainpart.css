@@ -167,11 +167,12 @@ body:not(.darkMode) .tech-bubbles span:hover {
   }
 
   a {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 
   .contactMe {
     margin-top: 3em;
+    margin-bottom: 2em;
   }
 }
 
