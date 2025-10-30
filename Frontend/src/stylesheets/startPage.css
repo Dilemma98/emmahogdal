@@ -1,9 +1,9 @@
 body.lightMode{
     background-color: #f5f3f3;
-    color: #4e5648e6;
+    color: #45483cf9;
 }
 
 body.darkMode{
-    background-color: #4e5648e6;
+    background-color: #474a3ff9;
     color: white;
 }
