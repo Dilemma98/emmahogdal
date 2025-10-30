@@ -6,6 +6,7 @@
 iframe{
     width: 50vw;
     height: 90vh;
+    border-radius: 1em;
 }
 
 #workExp h2{
@@ -27,7 +28,7 @@ iframe{
     }
 
     #workExp iframe {
-        width: 80vw;
+        width: 60vw;
     }
 
 }

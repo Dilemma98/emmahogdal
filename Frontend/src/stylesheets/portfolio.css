@@ -104,7 +104,10 @@
     }
 
     .projectCard {
-        width: 90%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 24em;
         padding: 1em;
         border-radius: 0.8em;
     }
@@ -145,13 +148,13 @@
 
     .projects {
         grid-template-columns: repeat(2, 1fr); /* Två kolumner */
-        gap: 3em;
-        width: 85%;
+        gap: 2em;
+        width: 80%;
         margin-top: 4em;
     }
 
     .projectCard {
-        width: 100%;
+        width: 70%;
         padding: 1.3em;
         border-radius: 1em;
     }
