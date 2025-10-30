@@ -14,12 +14,12 @@ header h1 a{
 }
 
 .navBar ul {
-  font-size: 0.8em;
+  font-size: 0.9em;
   display: flex;
-  gap: 4em;
-  margin-top: 3em;
+  gap: 3em;
   justify-content: flex-end;
   align-items: center;
+  letter-spacing: 0.1em;
 }
 
 .navBar li{
@@ -72,7 +72,7 @@ body.lightMode header{
         gap: 3em;
         padding: 0em;
         width: 100%;
-        font-size: 0.6em;
+        font-size: 0.9em;
         margin-top: 0.8em;
         margin-left: auto;
         margin-right: auto;
