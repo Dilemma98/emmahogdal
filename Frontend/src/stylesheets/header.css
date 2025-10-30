@@ -1,65 +1,80 @@
 @import url('https://fonts.cdnfonts.com/css/skeina');
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
 }
 
-header h1 a{
+header h1 a {
     margin-left: 0.8em;
     font-size: 1.7em;
     font-weight: 100;
 }
 
 .navBar ul {
-  font-size: 0.9em;
-  display: flex;
-  gap: 3em;
-  justify-content: flex-end;
-  align-items: center;
-  letter-spacing: 0.1em;
+    font-size: 0.9em;
+    display: flex;
+    gap: 3em;
+    justify-content: flex-end;
+    align-items: center;
+    letter-spacing: 0.1em;
 }
 
-.navBar li{
+.workLink .mobileText {
+    display: none;
+}
+
+.workLink .desktopText {
+    display: inline;
+}
+
+.navBar li {
     list-style: none;
 }
 
-.navBar a, header h1 a{
+.navBar a,
+header h1 a {
     text-decoration: none;
 }
 
 
-header h1 a:hover, li:hover{
+header h1 a:hover,
+li:hover {
     cursor: pointer;
     border-bottom: 2px solid #4e5648e6;
+}
+
+li:hover{
     font-weight: 900;
 }
 
-body.darkMode header h1 a:hover, body.darkMode li:hover{
+body.darkMode header h1 a:hover,
+body.darkMode li:hover {
     border-bottom: 2px solid white;
 }
 
-h1, ul {
+h1,
+ul {
     font-family: 'Skeina', sans-serif;
 }
 
-body.darkMode header{
+body.darkMode header {
     border-bottom: 1px solid white;
 }
 
-body.lightMode header{
+body.lightMode header {
     border-bottom: 1px solid #4e5648e6;
 }
 
 @media screen and (max-width: 800px) {
-    header{
+    header {
         display: flex;
         flex-direction: column;
     }
-    
-    header h1{
+
+    header h1 {
         font-size: 1.5em;
         text-align: center;
     }
@@ -68,16 +83,24 @@ body.lightMode header{
         margin: 0 !important;
     }
 
-    .navBar ul{
+    .navBar ul {
         gap: 3em;
         padding: 0em;
         width: 100%;
-        font-size: 0.55em;
+        font-size: 0.8em;
         margin-top: 0.8em;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
         font-weight: bold;
+    }
+
+    .workLink .desktopText {
+        display: none;
+    }
+
+    .workLink .mobileText {
+        display: inline;
     }
 }
 

@@ -9,7 +9,12 @@ const Header = () => {
         <ul>
           <li><Link to="/portfolio">Portfolio</Link></li>
           <li><Link to="/education">Education</Link></li>
-          <li><Link to="/workexperience">Work Experience</Link></li>
+          <li>
+            <Link to="/workexperience" className="workLink">
+              <span className="desktopText">Work Experience</span>
+              <span className="mobileText">Work Exp.</span>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
