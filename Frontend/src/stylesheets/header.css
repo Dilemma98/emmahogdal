@@ -2,7 +2,7 @@
 
 header {
   display: flex;
-  justify-content: space-between; /* Titel till vänster, meny till höger */
+  justify-content: space-between;
   align-items: center;
   padding: 0 3em;
 }
@@ -18,7 +18,8 @@ header h1 a{
   display: flex;
   gap: 4em;
   margin-top: 3em;
-  justify-content: flex-end; /* korrekt syntax */
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .navBar li{
@@ -71,7 +72,7 @@ body.lightMode header{
         gap: 3em;
         padding: 0em;
         width: 100%;
-        font-size: 0.65em;
+        font-size: 0.6em;
         margin-top: 0.8em;
         margin-left: auto;
         margin-right: auto;
