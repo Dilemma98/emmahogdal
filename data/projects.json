@@ -1,6 +1,6 @@
 [
 {
-    "title": "Internship Project",
+    "title": "CRM application",
     "description": "A CRM-style mobile app developed during my internship. Built with React Native, Expo, and TypeScript, featuring encrypted API communication against an existing backend server. Currently in development.",
     "image": "images/CRMapp.png",
     "link": ""
