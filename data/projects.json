@@ -1,26 +1,26 @@
 [
-    {
-        "title": "InnoviaHub",
-        "description": "Full-stack office booking and user management app using React and .NET 9.",
-        "image": "images/InnoviaHub.png",
-        "link": "https://github.com/Dilemma98/InnoviaHub"
-    },
-     {
-        "title": "FrienDate",
-        "description": "A project aiming to help people coordinate schedules and suggest weather-based group activities.",
-        "image": "images/FrienDate.png",
-        "link": "https://github.com/Dilemma98/FrienDate"
-    },
-     {
-        "title": "SpaMedSpa",
-        "description": "A React-based app for booking spa treatments, built with React, TypeScript, Vite, and Tailwind CSS.",
-        "image": "images/StudioSpa.png",
-        "link": "https://github.com/Dilemma98/SpaMedSpa"
-    },
-    {
-        "title": "Tramsrapporten",
-        "description": "A Vue project with Google login, created to maintain and build knowledge over the summer break between the first and second year of studies.",
-        "image": "images/Tramsrapporten.png",
-        "link": "https://github.com/Dilemma98/SummerGroupProject"
-    }
+{
+    "title": "Internship Project",
+    "description": "A CRM-style mobile app developed during my internship. Built with React Native, Expo, and TypeScript, featuring encrypted API communication against an existing backend server. Currently in development.",
+    "image": "images/CRMapp.png",
+    "link": ""
+},
+  {
+    "title": "InnoviaHub",
+    "description": "Full-stack office booking and user management app using React and .NET 9.",
+    "image": "images/InnoviaHub.png",
+    "link": "https://github.com/Dilemma98/InnoviaHub"
+  },
+  {
+    "title": "FrienDate",
+    "description": "A project aiming to help people coordinate schedules and suggest weather-based group activities.",
+    "image": "images/FrienDate.png",
+    "link": "https://github.com/Dilemma98/FrienDate"
+  },
+  {
+    "title": "SpaMedSpa",
+    "description": "A React-based app for booking spa treatments, built with React, TypeScript, Vite, and Tailwind CSS.",
+    "image": "images/StudioSpa.png",
+    "link": "https://github.com/Dilemma98/SpaMedSpa"
+  }
 ]
