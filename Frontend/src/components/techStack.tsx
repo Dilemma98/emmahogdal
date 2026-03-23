@@ -4,6 +4,7 @@ const TechStack = () => {
     return(
          <div className="techStack">
           <h3>Tech stack</h3>
+          <p className="p">Technologies I've worked with through coursework and projects</p>
           <div className="tech-bubbles">
             <span>C#</span>
             <span>.NET</span>

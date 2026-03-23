@@ -1,9 +1,19 @@
-body.lightMode{
-    background-color: #f5f3f3;
+body.lightMode {
+    background: linear-gradient(135deg, #f5f3f3 0%, #e8ede3 50%, #f0f5ee 100%);
     color: #45483cf9;
 }
 
-body.darkMode{
-    background-color: #474a3ff9;
+body.darkMode {
+    background: linear-gradient(135deg, #474a3ff9 0%, #363830 50%, #4a4e40 100%);
     color: white;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    min-height: 98vh;
+    background-attachment: fixed;
 }
