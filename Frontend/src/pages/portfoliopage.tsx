@@ -1,7 +1,7 @@
 import Portfolio from "../components/portfolio";
 const PortfolioPage = () => {
     return(
-        <div>
+        <div className="page">
             <Portfolio />
         </div>
     );

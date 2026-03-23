@@ -11,6 +11,7 @@ header h1 a {
     margin-left: 0.8em;
     font-size: 1.7em;
     font-weight: 100;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
 }
 
 .navBar ul {
@@ -32,6 +33,7 @@ header h1 a {
 
 .navBar li {
     list-style: none;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
 }
 
 .navBar a,
@@ -43,16 +45,12 @@ header h1 a {
 header h1 a:hover,
 li:hover {
     cursor: pointer;
-    border-bottom: 2px solid #4e5648e6;
+    /* border-bottom: 1px solid #4e5648e6; */
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
 li:hover{
     font-weight: 900;
-}
-
-body.darkMode header h1 a:hover,
-body.darkMode li:hover {
-    border-bottom: 2px solid white;
 }
 
 h1,

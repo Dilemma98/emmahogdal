@@ -3,9 +3,11 @@ import Switch from "../components/switch";
 
 const WorkExpPage = () => {
     return (
-        <div className="workExpPage">
+        <div className="page">
+            <div className="workExpPage">
             <WorkExp />
             <Switch />
+        </div>
         </div>
     );
 }

@@ -4,9 +4,11 @@ import "../stylesheets/education.css";
 
 const EducationPage = () => {
     return (
-        <div className="educationPage">
+        <div className="page">
+            <div className="educationPage">
             <Education />
             <Switch />
+        </div>
         </div>
     );
 }

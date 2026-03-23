@@ -6,7 +6,7 @@ const StartPage = () => {
     localStorage.getItem("darkMode");
     return (
         <>
-            <div className="startMain">
+            <div className="page">
                  <MainPart />
             </div>
             <Switch />
