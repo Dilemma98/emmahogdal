@@ -1,7 +1,8 @@
-#portfolio{
+#portfolio {
     text-align: center;
 }
-#portfolio h2{
+
+#portfolio h2 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
@@ -11,7 +12,7 @@
     font-family: 'Skeina', sans-serif;
 }
 
-#portfolio .info{
+#portfolio .info {
     width: 40vw;
     height: 25vh;
     margin-left: auto;
@@ -20,6 +21,7 @@
     font-size: 1.16em;
     font-family: 'Times New Roman', Times, serif;
 }
+
 .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -34,10 +36,11 @@
     background: #a9a9a949;
     width: 90%;
     border-radius: 1em;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 1em;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .projectCard:hover {
@@ -58,6 +61,34 @@
     font-family: 'Skeina', sans-serif;
     font-weight: 600;
     margin-bottom: 1em;
+}
+
+.workingOnBadge {
+    position: absolute;
+    top: 0.5em;
+    left: 15.8em;
+    width: 10em;
+    font-size: 12px !important;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-align: center;
+    padding: 6px 0;
+    transform: rotate(45deg);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.20);
+    border-top-left-radius: 8em;
+    border-top-right-radius: 8em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    font-weight: bold;
+}
+
+.workingOnBadge::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #ffffff;
+    flex-shrink: 0;
 }
 
 /* Beskrivningstext (om du lägger till p senare) */
@@ -84,7 +115,7 @@
 }
 
 @media screen and (max-width: 800px) {
- #portfolio h2 {
+    #portfolio h2 {
         font-size: 1.8em;
         width: auto;
         margin-top: 1.5em;
@@ -126,6 +157,11 @@
         margin-bottom: 2em;
     }
 
+    .workingOnBadge {
+        top: 0.5em;
+        left: 13.8em;
+    }
+
     #portfolio a {
         font-size: 0.85em;
         padding: 0.4em 1em;
@@ -147,7 +183,8 @@
     }
 
     .projects {
-        grid-template-columns: repeat(2, 1fr); /* Två kolumner */
+        grid-template-columns: repeat(2, 1fr);
+        /* Två kolumner */
         gap: 2em;
         width: 80%;
         margin-top: 4em;
@@ -170,6 +207,10 @@
     .projectCard p {
         font-size: 1em;
         margin-bottom: 2em;
+    }
+    .workingOnBadge {
+        top: 0.5em;
+        left: 13.8em;
     }
 
     #portfolio a {

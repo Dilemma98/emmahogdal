@@ -29,9 +29,16 @@ const Portfolio = () => {
                 {projects.map((project, index) => (
                     <div className="projectCard" key={index}>
                         <h3>{project.title}</h3>
+                        
                         <img src={import.meta.env.BASE_URL + project.image} alt={project.title} />
                         <p>{project.description}</p>
-                        <a href={project.link} target="_blank">GitHub</a>
+                          {project.title === "CRM application" &&(
+                            <p className="workingOnBadge">In progress..</p>
+                        )}
+                        {project.title !== "CRM application" &&(
+                            <a className="ghButton" href={project.link} target="_blank">GitHub</a>
+                        )}
+                        
                     </div>
                 ))}
             </div>

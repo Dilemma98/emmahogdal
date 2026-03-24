@@ -37,8 +37,8 @@
 }
 
 .tech-bubbles span {
-  background-color: rgba(36, 36, 36, 0.646);
-  color: #f2f2f2;
+  /* background-color: rgba(36, 36, 36, 0.646);
+  color: #f2f2f2; */
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   font-size: 0.95rem;
