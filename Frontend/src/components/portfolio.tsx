@@ -35,7 +35,7 @@ const Portfolio = () => {
                           {project.title === "CRM application" &&(
                             <p className="workingOnBadge">In progress..</p>
                         )}
-                        {project.title !== "CRM application" &&(
+                        {project.link !== "" &&(
                             <a className="ghButton" href={project.link} target="_blank">GitHub</a>
                         )}
                         

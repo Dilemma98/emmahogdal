@@ -1,10 +1,10 @@
 [
-{
+  {
     "title": "CRM application",
     "description": "A CRM-style mobile app developed during my internship. Built with React Native, Expo, and TypeScript, featuring encrypted API communication against an existing backend server.",
     "image": "images/CRMapp.png",
     "link": ""
-},
+  },
   {
     "title": "InnoviaHub",
     "description": "Full-stack office booking and user management app using React and .NET 9.",

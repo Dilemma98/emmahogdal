@@ -24,17 +24,17 @@
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 2em;
-    margin: 2em auto 5em auto;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 3em;
+    margin: 2em auto;
     width: 90%;
-    max-width: 1200px;
-    text-align: center;
+    max-width: 1300px;
+    justify-items: center;
 }
 
 .projectCard {
     background: #a9a9a949;
-    width: 90%;
+    width: 100%;
     border-radius: 1em;
     /* overflow: hidden; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -168,8 +168,11 @@
 }
 
 @media screen and (min-width: 450px) and (max-width: 799px){
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
     .projectCard{
-        width: 70%
+        width: 80%
     }
 }
 
@@ -190,13 +193,14 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
         /* Två kolumner */
-        gap: 2em;
-        width: 80%;
-        margin-top: 4em;
+        gap: 3em;
+        width: 60%;
+        margin: 4em auto;
+        /* margin-left: 5%; */
     }
 
     .projectCard {
-        /* width: 70%; */
+        width: 90%;
         padding: 1.3em;
         border-radius: 1em;
     }
