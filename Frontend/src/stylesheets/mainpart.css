@@ -124,18 +124,18 @@ body:not(.darkMode) .tech-bubbles span:hover {
 @media screen and (max-width: 800px) {
   .mainPart {
     flex-direction: column;
-    width: 80vw;
+    width: 90vw;
     height: auto;
-    margin: 2em auto;
+    margin: 0 auto;
     gap: 2em;
     font-size: 1em;
   }
 
-  .mainPart .imgMe {
+  .imgMe {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     width: 8em;
-    margin-top: 0.5em;
+    margin-top: -2em;
   }
 
   .text {
