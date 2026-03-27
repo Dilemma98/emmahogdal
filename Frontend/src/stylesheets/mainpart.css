@@ -8,11 +8,10 @@
 }
 .mainPart {
   justify-content: center;
-  width: 90vw;
+  width: 50%;
   height: 55vh;
   display: flex;
-  margin-top: 3.5em;
-  margin-left: 3em;
+  margin: 5em auto;
   gap: 7em;
   font-size: 1.16em;
 }
@@ -121,16 +120,13 @@ body:not(.darkMode) .tech-bubbles span {
 body:not(.darkMode) .tech-bubbles span:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-
-
+/* === MOBIL (max 800px) === */
 @media screen and (max-width: 800px) {
   .mainPart {
     flex-direction: column;
-    width: 90vw;
+    width: 80vw;
     height: auto;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2em auto;
     gap: 2em;
     font-size: 1em;
   }
@@ -154,111 +150,66 @@ body:not(.darkMode) .tech-bubbles span:hover {
     margin-right: auto;
   }
 
-  .tech-bubbles {
-    gap: 0.5rem;
-  }
+  .tech-bubbles { gap: 0.5rem; }
 
-  .mainPart .contactMe {
-    margin-top: -1em;
-  }
+  .mainPart .contactMe { margin-top: -1em; }
+  .mainPart .contactMe .links { flex-direction: row; }
 
-  .mainPart .contactMe .links {
-    display: flex;
-    flex-direction: row;
-  }
+  .mainPart h2 { font-size: 1.7em; width: auto; }
+  .mainPart h3, .aboutHeader { font-size: 1.3em; width: auto; }
 
-  .mainPart h2 {
-    font-size: 1.7em;
-    width: auto;
-  }
-
-  .mainPart h3,
-  .aboutHeader {
-    font-size: 1.3em;
-    width: auto;
-  }
-
-  .links {
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  a {
-    font-size: 1.5em;
-  }
-
-  .contactMe {
-    margin-top: 3em;
-    margin-bottom: 2em;
-  }
+  .links { flex-direction: column; gap: 1em; }
+  a { font-size: 1.5em; }
+  .contactMe { margin-top: 3em; margin-bottom: 2em; }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1410px) {
+/* === TABLET / LITEN LAPTOP (801px - 1200px) === */
+@media screen and (min-width: 801px) and (max-width: 1200px) {
   .mainPart {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 85vw;
+    width: 80%;
     height: auto;
-    margin: 4em auto;
+    margin: -3em auto;
+    gap: 2em;
+    font-size: 1em;
+  }
+
+  .text { text-align: center; width: 70%; }
+  .techStack { width: 90%; margin: 0 auto; }
+  .contactMe { margin-top: 2em; text-align: center; }
+  .links { flex-direction: row; justify-content: center; gap: 2em; }
+  a { font-size: 1.4em; }
+  .mainPart h2 { font-size: 1.8em; width: auto; }
+  .mainPart h3, .aboutHeader { font-size: 1.3em; width: auto; }
+}
+
+/* === LAPTOP (1201px - 1646px) === */
+@media screen and (min-width: 1201px) and (max-width: 1646px) {
+  .mainPart {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin: 5em auto;
     gap: 3em;
     font-size: 1.1em;
   }
 
-  .mainPart .imgMe {
-    display: block;
-    margin: 0 auto;
-    width: 10em;
-  }
+  .mainPart .imgMe { width: 10em; }
+  .text { text-align: center; width: 50%; }
+  .techStack { width: 90%; margin: 0 auto; }
+  .contactMe { margin-top: 2.5em; text-align: center; margin-left: 1em; }
+  .links { flex-direction: row; justify-content: center; gap: 2em; }
+  a { font-size: 1.4em; }
+  .mainPart h2 { font-size: 1.9em; width: auto; }
+  .mainPart h3, .aboutHeader { font-size: 1.4em; width: auto; }
+}
 
-  .text {
-    text-align: center;
-    width: 75vw;
-    margin-top: -0.5em;
-  }
-
-  .techStack {
-    width: 75vw;
-    margin: 0 auto;
-  }
-
-  .tech-bubbles {
-    justify-content: center;
-    gap: 0.8rem;
-    margin-top: 1.2rem;
-  }
-
-  .tech-bubbles span {
-    font-size: 0.95rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .mainPart h2 {
-    font-size: 1.9em;
-    width: auto;
-    margin-bottom: 0.3em;
-  }
-
-  .mainPart h3,
-  .aboutHeader {
-    font-size: 1.4em;
-    width: auto;
-  }
-
-  .contactMe {
-    margin-top: 2.5em;
-    text-align: center;
-  }
-
-  .links {
-    display: flex;
-    flex-direction: row; /* Rada upp kontaktikonerna horisontellt */
-    justify-content: center;
-    gap: 2em;
-  }
-
-  a {
-    font-size: 1.4em;
+/* === STOR SKÄRM (1647px+) === */
+@media screen and (min-width: 1647px) {
+  .mainPart {
+    margin: 10em auto;
   }
 }

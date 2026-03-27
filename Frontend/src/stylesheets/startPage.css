@@ -29,7 +29,7 @@ body.darkMode .ghButton{
 body {
     scrollbar-width: none;
     -ms-overflow-style: none;
-    min-height: 98vh;
+    min-height: 100vh;
 }
 ::-webkit-scrollbar {
     display: none;

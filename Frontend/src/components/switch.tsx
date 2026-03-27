@@ -1,5 +1,6 @@
 import "../stylesheets/switch.css";
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 
 const Switch = () => {
 
@@ -23,14 +24,15 @@ const Switch = () => {
 
     const darkModeSwitch = () => setDarkMode(!darkMode);
 
-    return (
+    return createPortal(
         <div className="darkmodeLightmodeBtn" onClick={darkModeSwitch}>
             {darkMode ? (
                 <i className="fa-solid fa-sun"></i>
             ) : (
                 <i className="fa-solid fa-moon"></i>
             )}
-        </div>
+        </div>,
+        document.body
     );
 }
 
