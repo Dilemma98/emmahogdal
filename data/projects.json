@@ -22,5 +22,11 @@
     "description": "A React-based app for booking spa treatments, built with React, TypeScript, Vite, and Tailwind CSS.",
     "image": "images/StudioSpa.png",
     "link": "https://github.com/Dilemma98/SpaMedSpa"
-  }
+  },
+{
+  "title": "FilmStudio",
+  "description": "A fullstack app for managing film rentals between studios and cinemas, featuring a custom REST API, authentication, and film inventory management.",
+  "image": "images/FilmStudion.png",
+  "link": "https://github.com/Dilemma98/Filmstudion"
+}
 ]
