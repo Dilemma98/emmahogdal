@@ -5,6 +5,12 @@
     "image": "images/CRMapp.png",
     "link": ""
   },
+   {
+    "title": "MiniChat",
+    "description": "A fullstack real-time chat app built for fun with React, TypeScript, Node.js/Express, and Supabase. Features authentication, WebSocket messaging, and a live demo mode.",
+    "image": "images/MiniChat.png",
+    "link": "https://mini-chat-ruby.vercel.app/"
+  },
   {
     "title": "InnoviaHub",
     "description": "Full-stack office booking and user management app using React and .NET 9.",
@@ -23,10 +29,10 @@
     "image": "images/StudioSpa.png",
     "link": "https://github.com/Dilemma98/SpaMedSpa"
   },
-{
-  "title": "FilmStudio",
-  "description": "A fullstack app for managing film rentals between studios and cinemas, featuring a custom REST API, authentication, and film inventory management.",
-  "image": "images/FilmStudion.png",
-  "link": "https://github.com/Dilemma98/Filmstudion"
-}
+  {
+    "title": "FilmStudio",
+    "description": "A fullstack app for managing film rentals between studios and cinemas, featuring a custom REST API, authentication, and film inventory management.",
+    "image": "images/FilmStudion.png",
+    "link": "https://github.com/Dilemma98/Filmstudion"
+  }
 ]
