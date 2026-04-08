@@ -25,6 +25,23 @@ body.darkMode .ghButton{
      color: #45483cf9 !important;
      
 }
+body.lightMode .work-row-line, body.lightMode .timeline-line{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+body.lightMode .work-dot, body.lightMode .timeline-dot {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+body.lightMode .work-dot--current, body.lightMode .timeline-dot--current {
+    background-color: #6B5E45;
+    border-color: #6B5E45;
+}
+
+body.lightMode .work-tooltip {
+    background-color: rgba(50, 52, 44, 0.96);
+    border-color: rgba(0, 0, 0, 0.15);
+}
 
 body {
     scrollbar-width: none;

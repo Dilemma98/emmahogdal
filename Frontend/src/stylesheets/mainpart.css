@@ -8,11 +8,11 @@
 }
 .mainPart {
   justify-content: center;
-  width: 50%;
+  width: 70%;
   height: 55vh;
   display: flex;
-  margin: 5em auto;
-  gap: 7em;
+  margin: 3.5em auto;
+  gap: 9em;
   font-size: 1.16em;
 }
 

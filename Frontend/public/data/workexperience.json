@@ -1,0 +1,66 @@
+[
+  {
+    "period": "Nov 2025 - Maj 2026",
+    "title": "Lia-praktikant",
+    "employer": "Notyfile",
+    "location": "Örebro",
+    "description": "Arbetade självständigt med att utveckla en applikation som utökar funktionaliteten i företagets befintliga CRM-system. Tog ansvar för design, struktur och implementation av centrala funktioner, med stöd från kollegor vid behov.",
+    "current": true
+  },
+  {
+    "period": "Nov 2023 - Aug 2024",
+    "title": "Löneadministratör",
+    "employer": "Löneförvaltningen",
+    "location": "Kumla kommun",
+    "description": "Ansvarade för löneadministration av både tim- och månadsanställda, utfärdade arbetsgivarintyg och lämnade inkomstuppgifter till Försäkringskassan. Arbetade i lönehanteringssystemet PersonecWeb och satte mig in i gällande allmänna bestämmelser."
+  },
+  {
+    "period": "Jun 2023 - Sep 2023",
+    "title": "Löneadministratör",
+    "employer": "Löneförvaltningen",
+    "location": "Kumla kommun",
+    "description": "Intermittent anställning. Bidrog under sommaren till löneförvaltningen i Kumla kommun genom att hantera underlag och administration kopplad till kommunens ferieungdomar."
+  },
+  {
+    "period": "Jun 2023 - Sep 2023",
+    "title": "Barnskötare",
+    "employer": "Bemanningsenheten",
+    "location": "Kumla kommun",
+    "description": "Intermittent anställning inom förskola."
+  },
+  {
+    "period": "Apr 2023 - Jun 2023",
+    "title": "Barnskötare",
+    "employer": "Blå Husets förskola",
+    "location": "Kumla kommun",
+    "description": "Månadsanställning. Stöttade barn i åldrarna 3–6 år i deras dagliga aktiviteter."
+  },
+  {
+    "period": "2022",
+    "title": "Föräldraledig",
+    "employer": "",
+    "location": "",
+    "description": ""
+  },
+  {
+    "period": "2021",
+    "title": "Brevbärare",
+    "employer": "Postnord",
+    "location": "Leksand",
+    "description": "Sorterade och delade ut post och paket med bil."
+  },
+  {
+    "period": "2019 - 2021",
+    "title": "Brevbärare",
+    "employer": "Postnord",
+    "location": "Bollnäs / Edsbyn",
+    "description": "Sorterade och delade ut post och paket med bil."
+  },
+  {
+    "period": "2017 - 2019",
+    "title": "Brevbärare",
+    "employer": "Postnord",
+    "location": "Sveg",
+    "description": "Sorterade och delade ut post och paket med bil."
+  }
+]

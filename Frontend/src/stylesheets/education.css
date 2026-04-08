@@ -14,6 +14,123 @@
     font-family: 'Skeina', sans-serif;
 }
 
+.timeline-wrapper {
+    /* overflow-x: auto; */
+    padding: 12rem 2rem 3rem;
+    width: 90%;
+    justify-self: center;
+    margin-top: 2em;
+}
+
+.timeline-track {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-width: max-content;
+    width: 60%;
+    justify-self: center;
+    gap: 5em;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.09);
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    padding-right: 2rem;
+    flex-shrink: 0;
+}
+
+.timeline-item--hoverable {
+    cursor: default;
+}
+
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.timeline-dot--current {
+    background-color: #c9b99a;
+    border-color: #c9b99a;
+}
+
+.timeline-content {
+    text-align: left;
+}
+
+.timeline-period {
+    font-size: 0.85em;
+    opacity: 0.65;
+    margin: 0 0 0.2rem;
+}
+
+.timeline-title {
+    font-size: 0.95em;
+    font-weight: 600;
+    margin: 0 0 0.2rem;
+}
+
+.timeline-meta {
+    font-size: 0.85em;
+    opacity: 0.7;
+    margin: 0;
+}
+
+/* Tooltip */
+.timeline-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 0;
+    width: 220px;
+    background-color: rgba(30, 35, 25, 0.96);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9em;
+    line-height: 1.6;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 10;
+    transition: opacity 0.18s ease, visibility 0.18s ease;
+}
+
+.timeline-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    border: 6px solid transparent;
+    border-top-color: rgba(30, 35, 25, 0.96);
+}
+
+.timeline-item--hoverable:hover .timeline-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Mobil */
 @media screen and (max-width: 800px) {
     #education h2 {
         font-size: 1.8em;
@@ -21,9 +138,51 @@
         margin-top: 1.5em;
     }
 
-    #education iframe {
-        width: 60vw;
-        height: 70vh;
+    .timeline-wrapper {
+        padding: 1.5rem 1rem 2rem;
+        margin-top: 0;
     }
 
+    .timeline-track {
+        flex-direction: column-reverse;
+        min-width: unset;
+        gap: 1em;
+    }
+
+    .timeline-line {
+        top: 0;
+        bottom: 0;
+        left: 7px;
+        right: unset;
+        width: 2px;
+        height: auto;
+    }
+
+    .timeline-item {
+        flex-direction: row;
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 2rem;
+        gap: 1rem;
+    }
+
+    .timeline-dot {
+        margin-bottom: 0;
+        margin-top: 3px;
+    }
+
+    .timeline-tooltip {
+        bottom: unset;
+        top: calc(100% + 8px);
+        width: 85vw;
+        max-width: 320px;
+    }
+
+    .timeline-tooltip::after {
+        top: unset;
+        bottom: 100%;
+        border-top-color: transparent;
+        border-bottom-color: rgba(30, 35, 25, 0.96);
+    }
 }

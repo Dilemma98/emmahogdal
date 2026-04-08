@@ -1,0 +1,31 @@
+[
+  {
+    "period": "Aug 2024 - Maj 2026",
+    "title": "Webbutveckling .NET",
+    "school": "Campus Värnamo",
+    "type": "Distans",
+    "description": "Utbildning inom frontend- och backend-utveckling med fokus på webbutveckling, databaser och programmering.",
+    "current": true
+  },
+  {
+    "period": "Okt 2023 - Nov 2023",
+    "title": "Programmering 1 C#",
+    "school": "Komvux Kumla",
+    "type": "Fristående kurs",
+    "description": "Grunder i objektorienterad programmering."
+  },
+  {
+    "period": "Sep 2023 - Okt 2023",
+    "title": "Webbutveckling 1",
+    "school": "Komvux Kumla",
+    "type": "Fristående kurs",
+    "description": "HTML, CSS och grundläggande webbdesign."
+  },
+  {
+    "period": "2014 - 2017",
+    "title": "Samhällsvetenskapsprogrammet",
+    "school": "Ljusdals gymnasium",
+    "type": "Inriktning beteendevetenskap",
+    "description": "Gymnasieutbildning med fokus på psykologi, sociologi och kommunikation."
+  }
+]

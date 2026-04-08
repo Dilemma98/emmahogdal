@@ -1,15 +1,4 @@
-#workExp {
-    margin: auto;
-    text-align: center;
-}
-
-iframe{
-    width: 50vw;
-    min-height: 70vh;
-    border-radius: 0.8em;
-}
-
-#workExp h2{
+#workExp h2 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
@@ -20,6 +9,119 @@ iframe{
     font-family: 'Skeina', sans-serif;
 }
 
+.work-wrapper {
+    padding: 8rem 2rem 4rem;
+    width: 80%;
+    justify-self: center;
+    margin-top: 2em;
+}
+
+.work-row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 8rem;
+}
+
+.work-row-line {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.09);
+    z-index: 0;
+}
+
+.work-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    min-width: 80px;
+    padding-right: 0.5rem;
+}
+
+.work-item--hoverable {
+    cursor: default;
+}
+
+.work-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-bottom: 0.8rem;
+    z-index: 1;
+}
+
+.work-dot--current {
+    background-color: #c9b99a;
+    border-color: #c9b99a;
+}
+
+.work-content {
+    text-align: left;
+}
+
+.work-period {
+    font-size: 0.85em;
+    opacity: 0.6;
+    margin: 0 0 0.15rem;
+}
+
+.work-title {
+    font-size: 0.95em;
+    font-weight: 600;
+    margin: 0 0 0.1rem;
+}
+
+.work-meta {
+    font-size: 0.85em;
+    opacity: 0.7;
+    margin: 0;
+}
+
+/* Tooltip */
+.work-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 4em;
+    width: 200px;
+    background-color: rgba(30, 35, 25, 0.96);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9em;
+    line-height: 1.6;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 10;
+    transition: opacity 0.18s ease, visibility 0.18s ease;
+}
+
+.work-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    border: 6px solid transparent;
+    border-top-color: rgba(30, 35, 25, 0.96);
+}
+
+.work-item--hoverable:hover .work-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Mobil */
 @media screen and (max-width: 800px) {
     #workExp h2 {
         font-size: 1.8em;
@@ -27,9 +129,46 @@ iframe{
         margin-top: 1.5em;
     }
 
-    #workExp iframe {
-        width: 60vw;
-        height: 70vh;
+    .work-wrapper {
+        /* background-color: green; */
+        width: 45%;
+        padding: 1.5rem 1rem 2rem;
+        /* margin-top: 0; */
+        margin: 0 auto 0 auto;
     }
 
+    .work-row {
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+
+    .work-row-line {
+        top: 0;
+        bottom: 0;
+        left: 6px;
+        right: unset;
+        width: 2px;
+        height: auto;
+    }
+
+    .work-item {
+        flex-direction: row;
+        width: 100%;
+        min-width: unset;
+        padding-right: 0;
+        margin-bottom: 1.5rem;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .work-dot {
+        margin-bottom: 0;
+        margin-top: 3px;
+        flex-shrink: 0;
+    }
+
+    .work-tooltip {
+        width: 85vw;
+        max-width: 320px;
+    }
 }
