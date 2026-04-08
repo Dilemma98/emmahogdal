@@ -59,11 +59,11 @@ const WorkExp = () => {
       <div className="work-wrapper">
         <div className="work-row">
           <div className="work-row-line" />
-          {rowTwo.map((item, i) => renderItem(item, i))}
+          {rowTwo.map((item, i) => renderItem(item, i))}►
         </div>
         <div className="work-row">
           <div className="work-row-line" />
-          {rowOne.map((item, i) => renderItem(item, i))}
+          ⦿{rowOne.map((item, i) => renderItem(item, i))}
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ const Education = () => {
       <h2>Education</h2>
       <div className="timeline-wrapper">
         <div className="timeline-track">
-          <div className="timeline-line" />
+          <div className="timeline-line" />⦿
           {sorted.map((item, index) => (
             <div
               key={index}
@@ -44,6 +44,7 @@ const Education = () => {
               )}
             </div>
           ))}
+        ►
         </div>
       </div>
     </div>

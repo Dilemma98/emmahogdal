@@ -46,7 +46,7 @@ body.lightMode .work-tooltip {
 body {
     scrollbar-width: none;
     -ms-overflow-style: none;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 ::-webkit-scrollbar {
     display: none;

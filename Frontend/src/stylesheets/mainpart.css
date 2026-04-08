@@ -9,9 +9,9 @@
 .mainPart {
   justify-content: center;
   width: 70%;
-  height: 55vh;
+  height: 50vh;
   display: flex;
-  margin: 3.5em auto;
+  margin: 3.5em auto 0 auto;
   gap: 9em;
   font-size: 1.16em;
 }
