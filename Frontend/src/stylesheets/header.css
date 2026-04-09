@@ -4,12 +4,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10em;
+    padding: 0 3em;
 }
 
 header h1 a {
-    margin-left: 0.2em;
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-weight: 100;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.55);
 }
@@ -21,7 +20,6 @@ header h1 a {
     justify-content: flex-end;
     align-items: center;
     letter-spacing: 0.1em;
-    margin-right: 2em;
     
 }
 
@@ -47,7 +45,6 @@ header h1 a {
 header h1 a:hover,
 li:hover {
     cursor: pointer;
-    /* border-bottom: 1px solid #4e5648e6; */
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
@@ -68,26 +65,29 @@ body.lightMode header {
     border-bottom: 1px solid #4e56481c;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 700px) {
     header {
         display: flex;
         flex-direction: column;
     }
 
     header h1 {
-        font-size: 1.5em;
+        font-size: 1.2em;
         text-align: center;
+        margin-left: 0;
+        width: 100vw;
     }
 
     header a {
         margin: 0 !important;
+        width: 100%;
     }
 
     .navBar ul {
         gap: 3em;
         padding: 0em;
-        width: 100%;
-        font-size: 0.6em;
+        width: 115%;
+        font-size: 0.7em;
         margin-top: 0.8em;
         margin-left: auto;
         margin-right: auto;
@@ -104,24 +104,26 @@ body.lightMode header {
     }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1710px) {
+@media screen and (min-width: 701px) and (max-width: 1620px) {
     header {
         justify-content: space-between;
         align-items: center;
-        padding: 0 3em;
+        padding: 0 1em;
+    }
+    header h1{
+        width: 300px !important;
     }
 
     header h1 a {
-        font-size: 1.6em;
-        margin-left: 1em;
+        font-size: 1em;
     }
 
     .navBar ul {
-        font-size: 0.9em;
+        font-size: 0.75em;
         gap: 3em;
         margin-top: 0;
         margin-left: 0;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .navBar li {

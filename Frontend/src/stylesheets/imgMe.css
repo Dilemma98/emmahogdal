@@ -1,12 +1,18 @@
 .imgMe{
-    width: 11em;
+    width: 10.5em;
     border-radius: 3em;
-    padding: 0.5em;
+    padding: 0.35em;
     border: 0.08em solid #4e5648e6;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    margin-top: -2em;
 }
 
 body.darkMode .imgMe{
     border: 1px solid white;
 }
-
+@media screen and (max-width: 700px) {
+    .imgMe{
+        width: 6em;
+        margin-top: -4em;
+    }
+}

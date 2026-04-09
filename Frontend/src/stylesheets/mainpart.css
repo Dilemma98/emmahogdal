@@ -11,8 +11,8 @@
   width: 70%;
   height: 50vh;
   display: flex;
-  margin: 3.5em auto 0 auto;
-  gap: 9em;
+  margin: 4em auto 0 auto;
+  gap: 10em;
   font-size: 1.16em;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .techStack {
-  margin-top: 2em;
+  margin-top: 3.5em;
 }
 
 .tech-bubbles {
@@ -68,7 +68,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -0.1em;
-  width: 6em;
+  width: 7em;
   text-align: center;
   font-weight: 500;
   font-family: 'Skeina', sans-serif;
@@ -192,12 +192,12 @@ body:not(.darkMode) .tech-bubbles span:hover {
     align-items: center;
     justify-content: center;
     height: auto;
-    margin: 5em auto;
-    gap: 3em;
+    margin: 3em auto;
+    gap: 5em;
     font-size: 1.1em;
   }
 
-  .mainPart .imgMe { width: 10em; }
+  .mainPart .imgMe { margin-top: -4em;}
   .text { text-align: center; width: 50%; }
   .techStack { width: 90%; margin: 0 auto; }
   .contactMe { margin-top: 2.5em; text-align: center; margin-left: 1em; }
