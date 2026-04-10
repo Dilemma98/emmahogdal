@@ -9,19 +9,18 @@
     padding: 0.35em;
     border: 0.08em solid #4e5648e6;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
-    margin-top: -2em;
 }
 .subtitles{
     width: 100%;
     justify-self: center;
+    margin-top: 1em;
 }
 .subtitleStyle{
     font-style: italic;
     opacity: 0.9;
     font-size: 0.85em;
     text-align: center;
-    line-height: 1.8;
-    margin-top: 2em;
+    line-height: 1.2;
 }
 
 body.darkMode .imgMe{

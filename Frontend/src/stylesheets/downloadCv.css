@@ -1,0 +1,12 @@
+.downloadCvBtn{
+    font-size: 2.8em;
+    position: fixed;
+    right: 1.7em;
+    bottom: 0.2em;
+    z-index: 999;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease;
+}
+.downloadCvBtn:hover{
+    transform: translateY(-4px);
+}

@@ -87,7 +87,6 @@
     margin: 0;
 }
 
-/* Tooltip */
 .work-tooltip {
     visibility: hidden;
     opacity: 0;
@@ -120,6 +119,7 @@
     visibility: visible;
     opacity: 1;
 }
+
 
 /* Mobil */
 @media screen and (max-width: 800px) {
