@@ -219,6 +219,10 @@ body:not(.darkMode) .tech-bubbles span:hover {
 /* === STOR SKÄRM (1647px+) === */
 @media screen and (min-width: 1647px) {
   .mainPart {
-    margin: 10em auto;
+    margin: 6em auto;
+    gap: 12em;
+  }
+  .techStack{
+    margin-top: 10em;
   }
 }
