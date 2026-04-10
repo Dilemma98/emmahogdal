@@ -1,3 +1,8 @@
+.imgDiv{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+}
 .imgMe{
     width: 10.5em;
     border-radius: 3em;
@@ -6,6 +11,18 @@
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
     margin-top: -2em;
 }
+.subtitles{
+    width: 100%;
+    justify-self: center;
+}
+.subtitleStyle{
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 0.85em;
+    text-align: center;
+    line-height: 1.8;
+    margin-top: 2em;
+}
 
 body.darkMode .imgMe{
     border: 1px solid white;
@@ -13,6 +30,15 @@ body.darkMode .imgMe{
 @media screen and (max-width: 700px) {
     .imgMe{
         width: 6em;
-        margin-top: -4em;
+        margin-top: -3em;
+        margin-left: 1em;
     }
+    .subtitles{
+        display: none;
+    }
+    .subtitleStyle{
+        line-height: 1;
+        margin-top: 1em;
+    }
+
 }

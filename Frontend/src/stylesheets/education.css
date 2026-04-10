@@ -141,6 +141,9 @@
     .timeline-wrapper {
         padding: 1.5rem 1rem 2rem;
         margin-top: 0;
+        width: 92%;
+        justify-self: center;
+        /* background-color: green; */
     }
 
     .timeline-track {
@@ -176,7 +179,7 @@
         bottom: unset;
         top: calc(100% + 8px);
         width: 85vw;
-        max-width: 320px;
+        max-width: 220px;
     }
 
     .timeline-tooltip::after {

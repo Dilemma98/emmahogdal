@@ -1,29 +1,20 @@
 import imgUrl from "../assets/images/imgMe.jpg";
 import "../stylesheets/imgMe.css";
 
-const subtitleStyle = {
-  fontStyle: "italic",
-  opacity: 0.9,
-  fontSize: "0.85em",
-  textAlign: "center" as const,
-  lineHeight: "1.8",
-  marginTop: "2em"
-};
-
 const ImgMe = () => {
   return (
-    <div style={{ marginTop: "5em" }}>
+    <div className="imgDiv">
       <img className="imgMe" src={imgUrl} alt="Bild på Emma" />
-      <p style={subtitleStyle}>
-        v1.0 released -98 in Sveg
-        <br />
-        Raised to be a 'Härjedaling' ♡
+      <div className="subtitles">
+        <p className="subtitleStyle">
+        v1.0 released -98 in Härjedalen
       </p>
       <hr />
-      <p style={subtitleStyle}>
+      <p className="subtitleStyle">
         Note to self: <br />
         "It's not a bug, it's a feature"
       </p>
+      </div>
     </div>
   );
 };

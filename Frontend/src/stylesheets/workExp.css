@@ -11,7 +11,7 @@
 
 .work-wrapper {
     padding: 8rem 2rem 4rem;
-    width: 80%;
+    width: 92%;
     justify-self: center;
     margin-top: 2em;
 }
@@ -130,22 +130,25 @@
     }
 
     .work-wrapper {
-        /* background-color: green; */
-        width: 45%;
         padding: 1.5rem 1rem 2rem;
-        /* margin-top: 0; */
-        margin: 0 auto 0 auto;
+        margin-top: 0;
+        width: 73%;
+        justify-self: flex-end;
+        overflow: hidden;
+        /* background-color: green */
     }
 
     .work-row {
         flex-direction: column-reverse;
         margin-bottom: 0;
+        gap: 1em;
+        width: 90%;
     }
 
     .work-row-line {
         top: 0;
         bottom: 0;
-        left: 6px;
+        left: 7px;
         right: unset;
         width: 2px;
         height: auto;
@@ -153,12 +156,11 @@
 
     .work-item {
         flex-direction: row;
-        width: 100%;
-        min-width: unset;
+        width: 80%;
         padding-right: 0;
-        margin-bottom: 1.5rem;
+        padding-left: 0;
+        margin-bottom: 2rem;
         gap: 1rem;
-        align-items: flex-start;
     }
 
     .work-dot {
@@ -168,7 +170,18 @@
     }
 
     .work-tooltip {
+        bottom: unset;
+        top: calc(100% + 8px);
         width: 85vw;
-        max-width: 320px;
+        max-width: 220px;
+    }
+    .work-tooltip::after{
+        top: unset;
+        bottom: 100%;
+        border-top-color: transparent;
+        border-bottom-color: rgba(30, 35, 25, 0.96);
+    }
+    .work-item--hoverable{
+        width: 60%;
     }
 }

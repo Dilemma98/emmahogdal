@@ -24,7 +24,8 @@
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 3em;
     margin: 2em auto;
     width: 90%;
@@ -115,64 +116,37 @@
 }
 
 @media screen and (max-width: 800px) {
-    #portfolio h2 {
-        font-size: 1.8em;
-        width: auto;
-        margin-top: 1.5em;
+    #portfolio {
+        width: 100%;
+        margin: 0 auto;
     }
 
-    #portfolio .info {
-        width: 40%;
-        height: auto;
-        font-size: 1em;
-        margin-top: 1.5em;
+    #portfolio h2 {
+        font-size: 1.8em;
+    }
+
+    .info {
+        width: 90% !important;
     }
 
     .projects {
-        gap: 2em;
-        grid-template-columns: 2fr;
-        margin-top: 2em;
-        /* width: 60%; */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+        padding: 0 0.5em;
+        margin: 4em auto;
     }
-
     .projectCard {
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1em;
-        border-radius: 0.8em;
+        width: 100%;
+        box-sizing: border-box;
     }
-
     .projectCard img {
         width: 100%;
-        border-radius: 0.6em;
     }
-
-    .projects h3 {
-        font-size: 1.2em;
+    .hide {
+        display: none;
     }
-
-    .projectCard p {
-        font-size: 0.9em;
-        margin-bottom: 2em;
-    }
-
-    /* .workingOnBadge {
-        left: 13.8em;
-    } */
-
-    #portfolio a {
-        font-size: 0.85em;
-        padding: 0.4em 1em;
-    }
-}
-
-@media screen and (min-width: 450px) and (max-width: 799px){
-    .projects{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .projectCard{
-        width: 80%
+    .hide::hover{
+        display: block
     }
 }
 
@@ -192,11 +166,9 @@
 
     .projects {
         grid-template-columns: repeat(2, 1fr);
-        /* Två kolumner */
         gap: 3em;
         width: 60%;
         margin: 4em auto;
-        /* margin-left: 5%; */
     }
 
     .projectCard {
@@ -217,9 +189,6 @@
         font-size: 1em;
         margin-bottom: 2em;
     }
-    /* .workingOnBadge {
-        left: 24.5em;
-    } */
 
     #portfolio a {
         font-size: 0.9em;

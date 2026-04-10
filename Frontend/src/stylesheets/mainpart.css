@@ -129,18 +129,22 @@ body:not(.darkMode) .tech-bubbles span:hover {
     margin: 0 auto;
     gap: 2em;
     font-size: 1em;
+    flex: 1;
   }
-
-  .imgMe {
-    display: block;
-    margin: auto;
-    width: 8em;
-    margin-top: -2em;
+  .aboutHeader{
+    margin-top: 1em;
   }
-
-  .text {
+  .techStack{
+    margin-top: 1em;
+  }
+  .aboutDiv{
     margin-top: -1em;
-    text-align: center;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    /* justify-self: center; */
+    margin: 0 0 0 1em;
   }
 
   .text,
@@ -148,11 +152,12 @@ body:not(.darkMode) .tech-bubbles span:hover {
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
+    /* margin-top: 1em; */
   }
 
   .tech-bubbles { gap: 0.5rem; }
 
-  .mainPart .contactMe { margin-top: -1em; }
+  /* .mainPart .contactMe { margin-top: -1em; } */
   .mainPart .contactMe .links { flex-direction: row; }
 
   .mainPart h2 { font-size: 1.7em; width: auto; }
@@ -160,7 +165,11 @@ body:not(.darkMode) .tech-bubbles span:hover {
 
   .links { flex-direction: column; gap: 1em; }
   a { font-size: 1.5em; }
-  .contactMe { margin-top: 3em; margin-bottom: 2em; }
+  .contactMe { 
+    position: absolute;
+    top: 0em;
+    right: 4em;
+   }
 }
 
 /* === TABLET / LITEN LAPTOP (801px - 1200px) === */
