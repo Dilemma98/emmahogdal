@@ -197,17 +197,17 @@ body:not(.darkMode) .tech-bubbles span:hover {
 @media screen and (min-width: 1201px) and (max-width: 1646px) {
   .mainPart {
     display: flex;
-    width: 80%;
+    width: 90%;
     align-items: center;
     justify-content: center;
     height: auto;
     margin: 3em auto;
-    gap: 5em;
+    gap: 9em;
     font-size: 1.1em;
   }
 
   .mainPart .imgMe { margin-top: -4em;}
-  .text { text-align: center; width: 50%; }
+  .text { text-align: flex-start; width: 50%; }
   .techStack { width: 90%; margin: 0 auto; }
   .contactMe { margin-top: 2.5em; text-align: center; margin-left: 1em; }
   .links { flex-direction: row; justify-content: center; gap: 2em; }

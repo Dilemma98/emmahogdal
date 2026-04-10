@@ -104,7 +104,7 @@ body.lightMode header {
     }
 }
 
-@media screen and (min-width: 701px) and (max-width: 1620px) {
+@media screen and (min-width: 701px) and (max-width: 1200px) {
     header {
         justify-content: space-between;
         align-items: center;
