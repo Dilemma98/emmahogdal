@@ -29,7 +29,7 @@ body.darkMode .imgMe{
 @media screen and (min-width: 1201px) and (max-width: 1646px) {
 
     .imgDiv{
-        margin-top: 8em;
+        margin-top: 3em;
     }
 }
 @media screen and (max-width: 700px) {
