@@ -9,9 +9,9 @@
 .mainPart {
   justify-content: center;
   width: 70%;
-  height: 50vh;
+  /* height: 50vh; */
   display: flex;
-  margin: 4em auto 0 auto;
+  margin: 5% auto 0 auto;
   gap: 10em;
   font-size: 1.16em;
 }
@@ -201,7 +201,7 @@ body:not(.darkMode) .tech-bubbles span:hover {
     align-items: center;
     justify-content: center;
     height: auto;
-    margin: 3em auto;
+    margin: 2.5em auto;
     gap: 9em;
     font-size: 1.1em;
   }
