@@ -9,7 +9,7 @@
     margin: 1em auto 0 auto;
     width: auto;
     font-weight: 100;
-    font-size: 2.3em;
+    font-size: 2.1em;
     font-family: 'Skeina', sans-serif;
 }
 
@@ -20,9 +20,9 @@
     max-width: 700px;
     width: 90%;
     margin: 2em auto;
-    font-size: 1.15em;
-    /* font-family: 'Times New Roman', Times, serif; */
-    line-height: 1.5;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@
 
 .featuredOrNotHeader {
     font-family: 'Skeina', sans-serif;
-    font-weight: 100;
+    font-weight: 600;
     font-size: 1.6em;
 }
 .info{
@@ -106,7 +106,7 @@
 
 /* TEXT */
 .projectCard p {
-    font-size: 0.95em;
+    font-size: 1.05em;
     line-height: 1.4;
     margin-bottom: 2.5em;
 }

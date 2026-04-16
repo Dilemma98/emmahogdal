@@ -18,7 +18,6 @@ const Portfolio = () => {
   const featuredProjects = projects.filter((p) => p.featured);
   const otherProjects = projects.filter((p) => !p.featured);
 
-  // Fetching projects from json-file
   useEffect(() => {
     fetch(import.meta.env.BASE_URL + "data/projects.json")
       .then((res) => res.json())
@@ -28,13 +27,8 @@ const Portfolio = () => {
 
    return (
     <section id="portfolio">
-      <h2>Portfolio</h2>
+      {/* <h2>Portfolio</h2> */}
 
-      {/* <p className="info">
-        A collection of my work in fullstack development, mobile apps and real-time systems.
-      </p> */}
-
-      {/* FEATURED */}
       <h3 className="featuredOrNotHeader">Featured projects</h3>
 
       <div className="projects featured">
@@ -58,9 +52,7 @@ const Portfolio = () => {
             )}
           </div>
         ))}
-         {/* INFO CARD */}
         <div className="projectCard infoCard">
-          {/* <h3>Featured projects</h3> */}
           <p className="info">
             A selection of my most relevant work including fullstack applications,
             mobile development and real-time systems.

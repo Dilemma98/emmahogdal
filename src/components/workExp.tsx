@@ -55,7 +55,7 @@ const WorkExp = () => {
 
   return (
     <div id="workExp">
-      <h2>Work Experience</h2>
+      {/* <h2>Work Experience</h2> */}
       <div className="work-wrapper">
         <div className="work-row">
           <div className="work-row-line" />

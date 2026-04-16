@@ -1,7 +1,7 @@
 [
   {
     "title": "CRM application",
-    "description": "A CRM-style mobile app developed during my internship. Built with React Native, Expo, and TypeScript, featuring encrypted API communication against an existing backend server.",
+    "description": "CRM-inspired mobile application developed during my internship using React Native, Expo, and TypeScript. The app integrates with an existing backend API, where I implemented secure and encrypted data communication. This project gave me hands-on experience working with existing systems, API integration, and building reliable mobile interfaces in a real-world development environment.",
     "image": "images/CRMapp.png",
     "link": "",
     "featured": true,
@@ -9,7 +9,7 @@
   },
    {
     "title": "MiniChat",
-    "description": "A fullstack real-time messaging app built with React, TypeScript, Node.js/Express, and Supabase. Features authentication, WebSocket messaging, and a live demo mode.",
+    "description": "Full-stack real-time messaging application built with React, TypeScript, Node.js/Express, and Supabase. Implemented basic user authentication, WebSocket-based communication, and a live demo mode. The focus was on handling real-time updates, client synchronization, and frontend state management to deliver a responsive user experience without page reloads.",
     "image": "images/MiniChat.png",
     "link": "https://mini-chat-ruby.vercel.app/",
     "featured": true,

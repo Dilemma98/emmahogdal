@@ -24,7 +24,7 @@ const Education = () => {
 
   return (
     <div id="education">
-      <h2>Education</h2>
+      {/* <h2>Education</h2> */}
       <div className="timeline-wrapper">
         <div className="timeline-track">
           <div className="timeline-line" />⦿

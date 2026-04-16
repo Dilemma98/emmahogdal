@@ -32,6 +32,20 @@ body.darkMode .imgMe{
         margin-top: 3em;
     }
 }
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    .imgDiv{
+        position: relative;
+        right: 7em;
+        flex-direction: row;
+    }
+    .subtitles{
+        margin: 3em 0 0 5em;
+    }
+    
+     .imgMe{
+        width: 9em;
+     }
+}
 @media screen and (max-width: 700px) {
     .imgMe{
         width: 6em;
