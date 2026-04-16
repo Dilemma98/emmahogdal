@@ -14,6 +14,8 @@ interface Project {
 
 const Portfolio = () => {
   const [projects, setProjects] = useState<Project[]>([]);
+  const [expanded, setExpanded] = useState<Set<number>>(new Set());
+  const [expandedOther, setExpandedOther] = useState<Set<number>>(new Set());
 
   const featuredProjects = projects.filter((p) => p.featured);
   const otherProjects = projects.filter((p) => !p.featured);
@@ -25,7 +27,22 @@ const Portfolio = () => {
       .catch((error) => console.error("Fel vid hämtning:", error));
   }, []);
 
-   return (
+  const toggleExpanded = (i: number) => {
+    setExpanded((prev) => {
+      const next = new Set(prev);
+      next.has(i) ? next.delete(i) : next.add(i);
+      return next;
+    });
+  };
+  const toggleExpandedOther = (i: number) => {
+    setExpandedOther((prev) => {
+      const next = new Set(prev);
+      next.has(i) ? next.delete(i) : next.add(i);
+      return next;
+    });
+  };
+
+  return (
     <section id="portfolio">
       {/* <h2>Portfolio</h2> */}
 
@@ -34,18 +51,28 @@ const Portfolio = () => {
       <div className="projects featured">
         {featuredProjects.map((project, i) => (
           <div className="projectCard" key={i}>
-            {project.image && (
-              <img src={project.image} alt={project.title} />
-            )}
+            {project.image && <img src={project.image} alt={project.title} />}
 
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+            <p className={expanded.has(i) ? "" : "truncated"}>
+              {project.description}
+            </p>
+            <div style={{display : "flex", flexDirection: "column"}}>
+              <button className="readMore" onClick={() => toggleExpanded(i)}>
+                {expanded.has(i) ? "▲": "▼" }
+              </button>
 
-            {project.link && (
-              <a className="ghButton" href={project.link} target="_blank" rel="noreferrer">
-                Live
-              </a>
-            )}
+              {project.link && (
+                <a
+                  className="ghButton"
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live
+                </a>
+              )}
+            </div>
 
             {project.inProgress && (
               <div className="workingOnBadge">In progress</div>
@@ -54,7 +81,9 @@ const Portfolio = () => {
         ))}
         <div className="projectCard infoCard">
           <p className="info">
-            A selection of my most relevant work including <b>fullstack</b> applications, <b> mobile</b>  development and <b>real-time</b> systems.
+            A selection of my most relevant work including <b>fullstack</b>{" "}
+            applications, <b> mobile</b> development and <b>real-time</b>{" "}
+            systems.
           </p>
         </div>
       </div>
@@ -65,15 +94,25 @@ const Portfolio = () => {
       <div className="projects">
         {otherProjects.map((project, i) => (
           <div className="projectCard" key={i}>
-            {project.image && (
-              <img src={project.image} alt={project.title} />
-            )}
+            {project.image && <img src={project.image} alt={project.title} />}
 
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+             <p className={expandedOther.has(i) ? "" : "truncated"}>
+              {project.description}
+            </p>
+                        <div style={{display : "flex", flexDirection: "column"}}>
+              <button className="readMore" onClick={() => toggleExpanded(i)}>
+                {expanded.has(i) ? "▲": "▼" }
+              </button>
+            </div>
 
             {project.link && (
-              <a className="ghButton" href={project.link} target="_blank" rel="noreferrer">
+              <a
+                className="ghButton"
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+              >
                 GitHub
               </a>
             )}
