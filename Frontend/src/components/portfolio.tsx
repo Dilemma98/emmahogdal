@@ -8,10 +8,15 @@ interface Project {
   description: string;
   image: string;
   link: string;
+  featured: boolean;
+  inProgress: boolean;
 }
 
 const Portfolio = () => {
   const [projects, setProjects] = useState<Project[]>([]);
+
+  const featuredProjects = projects.filter((p) => p.featured);
+  const otherProjects = projects.filter((p) => !p.featured);
 
   // Fetching projects from json-file
   useEffect(() => {
@@ -21,43 +26,71 @@ const Portfolio = () => {
       .catch((error) => console.error("Fel vid hämtning:", error));
   }, []);
 
-  return (
-    <div id="portfolio">
+   return (
+    <section id="portfolio">
       <h2>Portfolio</h2>
-      <div className="info">
-        A selection of my recent projects, developed both independently and
-        collaboratively during my studies.
-      </div>
-      <div className="projects">
-        {projects.map((project, index) => (
-          <div className="projectCard" key={index}>
-            <h3>{project.title}</h3>
 
-            <img
-              src={import.meta.env.BASE_URL + project.image}
-              alt={project.title}
-            />
-            <p>{project.description}</p>
-            {(project.title === "CRM application" ||
-              project.title === "MiniChat") && (
-              <p className="workingOnBadge">In progress..</p>
+      {/* <p className="info">
+        A collection of my work in fullstack development, mobile apps and real-time systems.
+      </p> */}
+
+      {/* FEATURED */}
+      <h3 className="featuredOrNotHeader">Featured projects</h3>
+
+      <div className="projects featured">
+        {featuredProjects.map((project, i) => (
+          <div className="projectCard" key={i}>
+            {project.image && (
+              <img src={project.image} alt={project.title} />
             )}
-            {project.link !== "" &&
-              project.link !== "https://mini-chat-ruby.vercel.app/" && (
-                <a className="ghButton" href={project.link} target="_blank">
-                  GitHub
-                </a>
-              )}
-            {project.link === "https://mini-chat-ruby.vercel.app/" && (
-              <a className="ghButton" href={project.link} target="_blank">
+
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+
+            {project.link && (
+              <a className="ghButton" href={project.link} target="_blank" rel="noreferrer">
                 Live
+              </a>
+            )}
+
+            {project.inProgress && (
+              <div className="workingOnBadge">In progress</div>
+            )}
+          </div>
+        ))}
+         {/* INFO CARD */}
+        <div className="projectCard infoCard">
+          {/* <h3>Featured projects</h3> */}
+          <p className="info">
+            A selection of my most relevant work including fullstack applications,
+            mobile development and real-time systems.
+          </p>
+        </div>
+      </div>
+
+      {/* OTHER */}
+      <h3 className="featuredOrNotHeader">Other projects</h3>
+
+      <div className="projects">
+        {otherProjects.map((project, i) => (
+          <div className="projectCard" key={i}>
+            {project.image && (
+              <img src={project.image} alt={project.title} />
+            )}
+
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+
+            {project.link && (
+              <a className="ghButton" href={project.link} target="_blank" rel="noreferrer">
+                GitHub
               </a>
             )}
           </div>
         ))}
       </div>
       <Switch />
-    </div>
+    </section>
   );
 };
 

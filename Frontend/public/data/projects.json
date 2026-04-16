@@ -3,36 +3,48 @@
     "title": "CRM application",
     "description": "A CRM-style mobile app developed during my internship. Built with React Native, Expo, and TypeScript, featuring encrypted API communication against an existing backend server.",
     "image": "images/CRMapp.png",
-    "link": ""
+    "link": "",
+    "featured": true,
+    "inProgress": true
   },
    {
     "title": "MiniChat",
-    "description": "A fullstack real-time chat app built for fun with React, TypeScript, Node.js/Express, and Supabase. Features authentication, WebSocket messaging, and a live demo mode.",
+    "description": "A fullstack real-time messaging app built with React, TypeScript, Node.js/Express, and Supabase. Features authentication, WebSocket messaging, and a live demo mode.",
     "image": "images/MiniChat.png",
-    "link": "https://mini-chat-ruby.vercel.app/"
+    "link": "https://mini-chat-ruby.vercel.app/",
+    "featured": true,
+    "inProgress": false
   },
   {
     "title": "InnoviaHub",
     "description": "Full-stack office booking and user management app using React and .NET 9.",
     "image": "images/InnoviaHub.png",
-    "link": "https://github.com/Dilemma98/InnoviaHub"
+    "link": "https://github.com/Dilemma98/InnoviaHub",
+    "featured": false,
+    "inProgress": false
   },
   {
     "title": "FrienDate",
     "description": "A project aiming to help people coordinate schedules and suggest weather-based group activities.",
     "image": "images/FrienDate.png",
-    "link": "https://github.com/Dilemma98/FrienDate"
+    "link": "https://github.com/Dilemma98/FrienDate",
+    "featured": false,
+    "inProgress": false
   },
   {
     "title": "SpaMedSpa",
     "description": "A React-based app for booking spa treatments, built with React, TypeScript, Vite, and Tailwind CSS.",
     "image": "images/StudioSpa.png",
-    "link": "https://github.com/Dilemma98/SpaMedSpa"
+    "link": "https://github.com/Dilemma98/SpaMedSpa",
+    "featured": false,
+    "inProgress": false
   },
   {
     "title": "FilmStudio",
-    "description": "A fullstack app for managing film rentals between studios and cinemas, featuring a custom REST API, authentication, and film inventory management.",
+    "description": "A fullstack app for managing film rentals, featuring a custom REST API, authentication, and film inventory management.",
     "image": "images/FilmStudion.png",
-    "link": "https://github.com/Dilemma98/Filmstudion"
+    "link": "https://github.com/Dilemma98/Filmstudion",
+    "featured": false,
+    "inProgress": false
   }
 ]

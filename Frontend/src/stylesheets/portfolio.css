@@ -2,111 +2,174 @@
     text-align: center;
 }
 
+/* ===================== */
+/* TITEL */
+/* ===================== */
 #portfolio h2 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    width: 10em;
+    margin: 1em auto 0 auto;
+    width: auto;
     font-weight: 100;
     font-size: 2.3em;
     font-family: 'Skeina', sans-serif;
 }
 
-#portfolio .info {
-    width: 40vw;
-    height: 6vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    font-size: 1.16em;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.projects {
-    display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3em;
-    margin: 2em auto;
+/* ===================== */
+/* INFO TEXT */
+/* ===================== */
+.infoCard .info {
+    max-width: 700px;
     width: 90%;
-    max-width: 1300px;
-    justify-items: center;
+    margin: 2em auto;
+    font-size: 1.15em;
+    /* font-family: 'Times New Roman', Times, serif; */
+    line-height: 1.5;
+    text-align: center;
 }
 
+/* ===================== */
+/* PROJECT CONTAINER */
+/* ===================== */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5em;
+    width: 100%;
+    margin: 2em 0;
+}
+
+.featuredOrNotHeader {
+    font-family: 'Skeina', sans-serif;
+    font-weight: 100;
+    font-size: 1.6em;
+}
+.info{
+    margin: 1em auto;
+}
+
+/* ===================== */
+/* FEATURED VARIANT */
+/* ===================== */
+.projects.featured {
+    margin-bottom: 3em;
+}
+
+/* ===================== */
+/* CARD BASE */
+/* ===================== */
 .projectCard {
     background: #a9a9a949;
-    width: 100%;
+    /* width: 260px; */
     border-radius: 1em;
-    /* overflow: hidden; */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 1em;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* FEATURED CARD VARIANT */
+.projects.featured .projectCard {
+    background: #b0b0b045;
+    width: 300px;
+    margin: 0 2em;
+}
+
+/* NORMAL CARDS */
+.projects:not(.featured) .projectCard {
+    transform: scale(0.98);
+    opacity: 0.95;
+     width: 240px;
+}
+
+/* HOVER */
 .projectCard:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
 
+/* IMAGE */
 .projectCard img {
-    width: 90%;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 0.8em;
-    margin-bottom: 0.5em;
 }
 
-/* Projektets titel */
+/* TITLE */
 .projects h3 {
     font-family: 'Skeina', sans-serif;
     font-weight: 600;
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
 
-.workingOnBadge {
-    position: absolute;
-    top: 0.5em;
-    right: 0;
-    width: 10em;
-    font-size: 12px !important;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-align: center;
-    padding: 6px 0;
-    transform: translate(30%, -30%) rotate(45deg);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.20);
-    border-top-left-radius: 8em;
-    border-top-right-radius: 8em;
-    border-bottom-left-radius: 2em;
-    border-bottom-right-radius: 2em;
-    font-weight: bold;
-}
-
-.workingOnBadge::before {
-    content: '';
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #ffffff;
-    flex-shrink: 0;
-}
-
-/* Beskrivningstext (om du lägger till p senare) */
+/* TEXT */
 .projectCard p {
     font-size: 0.95em;
     line-height: 1.4;
-    margin-bottom: 3em;
+    margin-bottom: 2.5em;
 }
 
+/* ===================== */
+/* FEATURED INFO CARD */
+/* ===================== */
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: rgba(80, 80, 80, 0.2);
+}
+
+.infoCard h3 {
+    font-family: 'Skeina', sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.infoCard p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.85;
+}
+
+/* nicer gradient option */
+.infoCard {
+    background: linear-gradient(
+        135deg,
+        rgba(120,120,120,0.25),
+        rgba(60,60,60,0.15)
+    );
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ===================== */
+/* BADGE */
+/* ===================== */
+.workingOnBadge {
+    position: absolute;
+    top: 0.5em;
+    right: -2.2em;
+    transform: rotate(45deg);
+    font-size: 12px !important;
+    font-weight: bold;
+    padding: 6px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 2em;
+}
+
+/* ===================== */
+/* LINK BUTTON */
+/* ===================== */
 #portfolio a {
     font-size: 0.9em;
     text-decoration: none;
-    position: relative;
-    bottom: 0.5em;
     color: #fff;
     background: #545454;
-    padding: 0.5em 0.5em;
+    padding: 0.5em 1em;
     border-radius: 5em;
     transition: background 0.3s ease;
 }
@@ -115,66 +178,47 @@
     background: #4a4a4a;
 }
 
+/* ===================== */
+/* MOBILE */
+/* ===================== */
 @media screen and (max-width: 800px) {
-    #portfolio {
-        width: 100%;
-        margin: 0 auto;
-    }
 
     #portfolio h2 {
         font-size: 1.8em;
     }
 
-    .info {
-        width: 90% !important;
-    }
-
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5em;
-        padding: 0 0.5em;
-        margin: 4em auto;
-    }
-    .projectCard {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .projectCard img {
-        width: 100%;
-    }
-    .hide {
-        display: none;
-    }
-    .hide::hover{
-        display: block
-    }
-}
-
-@media screen and (min-width: 801px) and (max-width: 1410px) {
-    #portfolio h2 {
-        font-size: 2em;
-        width: auto;
-        margin-top: 2em;
-    }
-
     #portfolio .info {
-        width: 60vw;
-        height: auto;
-        font-size: 1.1em;
-        margin-top: 2em;
-    }
-
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3em;
-        width: 60%;
-        margin: 4em auto;
+        width: 90%;
+        font-size: 1.05em;
     }
 
     .projectCard {
         width: 90%;
-        padding: 1.3em;
-        border-radius: 1em;
+        max-width: 320px;
+    }
+
+    .projectCard img {
+        height: 180px;
+    }
+}
+
+/* ===================== */
+/* TABLET */
+/* ===================== */
+@media screen and (min-width: 801px) and (max-width: 1410px) {
+
+    #portfolio h2 {
+        font-size: 2em;
+    }
+
+    #portfolio .info {
+        width: 60%;
+        font-size: 1.1em;
+    }
+
+    .projectCard {
+        width: 240px;
+        padding: 1.2em;
     }
 
     .projectCard img {
@@ -182,16 +226,6 @@
     }
 
     .projects h3 {
-        font-size: 1.3em;
-    }
-
-    .projectCard p {
-        font-size: 1em;
-        margin-bottom: 2em;
-    }
-
-    #portfolio a {
-        font-size: 0.9em;
-        padding: 0.5em 1.2em;
+        font-size: 1.2em;
     }
 }
