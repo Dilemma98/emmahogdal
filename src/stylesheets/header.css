@@ -14,7 +14,7 @@ header h1 a {
 }
 
 .navBar ul {
-    font-size: 0.9em;
+    font-size: 0.95em;
     display: flex;
     gap: 3em;
     justify-content: flex-end;
@@ -35,7 +35,15 @@ header h1 a {
     list-style: none;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
 }
-
+.active {
+  font-weight: 600;
+}
+body.darkMode .active{
+    border-bottom: 1px solid white;
+}
+body.lightMode .active{
+    border-bottom: 1px solid #4e5648;
+}
 .navBar a,
 header h1 a {
     text-decoration: none;

@@ -54,8 +54,7 @@ const Portfolio = () => {
         ))}
         <div className="projectCard infoCard">
           <p className="info">
-            A selection of my most relevant work including fullstack applications,
-            mobile development and real-time systems.
+            A selection of my most relevant work including <b>fullstack</b> applications, <b> mobile</b>  development and <b>real-time</b> systems.
           </p>
         </div>
       </div>
