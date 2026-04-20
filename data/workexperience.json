@@ -1,66 +1,38 @@
 [
   {
     "period": "Nov 2025 - Maj 2026",
-    "title": "Lia-praktikant",
+   "title": "Apputvecklare (LIA)",
     "employer": "Notyfile",
     "location": "Örebro",
-    "description": "Arbetade självständigt med att utveckla en applikation som utökar funktionaliteten i företagets befintliga CRM-system. Tog ansvar för design, struktur och implementation av centrala funktioner, med stöd från kollegor vid behov.",
+    "description": "Utvecklade självständigt en mobilapplikation som utökar företagets befintliga CRM-system med React Native, TypeScript och Expo. Tog fullt ansvar för design, arkitektur och implementation av centrala funktioner, med stöd från kollegor vid behov.",
     "current": true
   },
   {
     "period": "Nov 2023 - Aug 2024",
     "title": "Löneadministratör",
-    "employer": "Löneförvaltningen",
-    "location": "Kumla kommun",
-    "description": "Ansvarade för löneadministration av både tim- och månadsanställda, utfärdade arbetsgivarintyg och lämnade inkomstuppgifter till Försäkringskassan. Arbetade i lönehanteringssystemet PersonecWeb och satte mig in i gällande allmänna bestämmelser."
+    "employer": "Löneförvaltningen · Kumla kommun",
+    "location": "Kumla",
+    "description": "Ansvarade för löneadministration av tim- och månadsanställda, utfärdade arbetsgivarintyg och lämnade inkomstuppgifter till Försäkringskassan. Arbetade i PersonecWeb och tillämpade gällande allmänna bestämmelser."
   },
   {
     "period": "Jun 2023 - Sep 2023",
-    "title": "Löneadministratör",
-    "employer": "Löneförvaltningen",
-    "location": "Kumla kommun",
-    "description": "Intermittent anställning. Bidrog under sommaren till löneförvaltningen i Kumla kommun genom att hantera underlag och administration kopplad till kommunens ferieungdomar."
+    "title": "Löneadministratör (sommar)",
+    "employer": "Löneförvaltningen · Kumla kommun",
+    "location": "Kumla",
+    "description": "Hanterade löneadministration och dokumentation kopplad till kommunens ferieungdomsprogram."
   },
   {
-    "period": "Jun 2023 - Sep 2023",
+    "period": "Apr 2023 - Sep 2023",
     "title": "Barnskötare",
-    "employer": "Bemanningsenheten",
-    "location": "Kumla kommun",
-    "description": "Intermittent anställning inom förskola."
+    "employer": "Kumla kommun",
+    "location": "Kumla",
+    "description": "Stöttade barn i åldrarna 3–6 år i dagliga aktiviteter inom kommunens förskoleverksamhet."
   },
   {
-    "period": "Apr 2023 - Jun 2023",
-    "title": "Barnskötare",
-    "employer": "Blå Husets förskola",
-    "location": "Kumla kommun",
-    "description": "Månadsanställning. Stöttade barn i åldrarna 3–6 år i deras dagliga aktiviteter."
-  },
-  {
-    "period": "2022",
-    "title": "Föräldraledig",
-    "employer": "",
-    "location": "",
-    "description": ""
-  },
-  {
-    "period": "2021",
+    "period": "2017 - 2021",
     "title": "Brevbärare",
     "employer": "Postnord",
-    "location": "Leksand",
-    "description": "Sorterade och delade ut post och paket med bil."
-  },
-  {
-    "period": "2019 - 2021",
-    "title": "Brevbärare",
-    "employer": "Postnord",
-    "location": "Bollnäs / Edsbyn",
-    "description": "Sorterade och delade ut post och paket med bil."
-  },
-  {
-    "period": "2017 - 2019",
-    "title": "Brevbärare",
-    "employer": "Postnord",
-    "location": "Sveg",
-    "description": "Sorterade och delade ut post och paket med bil."
+    "location": "Sveg · Bollnäs / Edsbyn · Leksand",
+    "description": "Sorterade och delade ut post och paket med bil på flera olika orter under fyra år."
   }
 ]

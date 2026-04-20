@@ -1,31 +1,33 @@
 [
   {
     "title": "CRM application",
-    "description": "CRM-inspired mobile application developed during my internship using React Native, Expo, and TypeScript. The app integrates with an existing backend API, where I implemented secure and encrypted data communication. This project gave me hands-on experience working with existing systems, API integration, and building reliable mobile interfaces in a real-world development environment.",
+    "description": "Mobile application developed during my internship using React Native, Expo, and TypeScript. Integrated with the company’s existing backend API and implemented secure, encrypted data communication. Gained hands-on experience building production-ready mobile interfaces and working within a real-world development environment.",
     "image": "images/CRMapp.png",
     "link": "",
     "featured": true,
-    "inProgress": true
+    "inProgress": true,
+    "privaterepo": true
   },
-   {
+  {
     "title": "MiniChat",
-    "description": "Full-stack real-time messaging application built with React, TypeScript, Node.js/Express, and Supabase. Implemented basic user authentication, WebSocket-based communication, and a live demo mode. The focus was on handling real-time updates, client synchronization, and frontend state management to deliver a responsive user experience without page reloads.",
+    "description": "Fullstack real-time chat application built with React, TypeScript, Node.js/Express, and Supabase. Implemented authentication, WebSocket-based communication, and a live demo mode. Focused on seamless real-time updates and efficient client synchronization without page reloads.",
     "image": "images/MiniChat.png",
     "link": "https://mini-chat-ruby.vercel.app/",
     "featured": true,
-    "inProgress": false
+    "inProgress": false,
+    "live": true
   },
   {
     "title": "InnoviaHub",
-    "description": "Full-stack office booking and user management app using React and .NET 9.",
+   "description": "Fullstack application for office booking and user management built with React and .NET 9. Implements role-based access control with admin and user accounts, enabling different permissions and workflows. Includes real-time updates for booking changes to ensure synchronized user experience. The project also explored AI-assisted features as part of experimental functionality. Designed to streamline workspace reservations with a scalable and maintainable architecture.",
     "image": "images/InnoviaHub.png",
     "link": "https://github.com/Dilemma98/InnoviaHub",
-    "featured": false,
+    "featured": true,
     "inProgress": false
   },
   {
     "title": "FrienDate",
-    "description": "A project aiming to help people coordinate schedules and suggest weather-based group activities.",
+    "description": "Application that helps friends coordinate schedules and discover activities based on weather conditions and shared availability. Focused on usability and smart activity suggestions.",
     "image": "images/FrienDate.png",
     "link": "https://github.com/Dilemma98/FrienDate",
     "featured": false,
@@ -33,7 +35,7 @@
   },
   {
     "title": "SpaMedSpa",
-    "description": "A React-based app for booking spa treatments, built with React, TypeScript, Vite, and Tailwind CSS.",
+    "description": "Booking application for spa treatments built with React, TypeScript, Vite, and Tailwind CSS. Developed with a focus on responsive design and smooth user experience.",
     "image": "images/StudioSpa.png",
     "link": "https://github.com/Dilemma98/SpaMedSpa",
     "featured": false,
@@ -41,7 +43,7 @@
   },
   {
     "title": "FilmStudio",
-    "description": "A fullstack app for managing film rentals, featuring a custom REST API, authentication, and film inventory management.",
+    "description": "Fullstack movie rental application featuring a custom REST API, user authentication, and inventory management. Emphasized clean architecture and efficient data handling.",
     "image": "images/FilmStudion.png",
     "link": "https://github.com/Dilemma98/Filmstudion",
     "featured": false,

@@ -4,28 +4,21 @@
     "title": "Webbutveckling .NET",
     "school": "Campus Värnamo",
     "type": "Distans",
-    "description": "Utbildning inom frontend- och backend-utveckling med fokus på webbutveckling, databaser och programmering.",
+    "description": "Tvåårig YH-utbildning med fokus på fullstackutveckling inom .NET, C#, React och TypeScript. Inkluderar databaser, agila metoder och 5 månaders LIA-praktik i verklig utvecklingsmiljö.",
     "current": true
   },
-  {
+    {
     "period": "Okt 2023 - Nov 2023",
     "title": "Programmering 1 C#",
     "school": "Komvux Kumla",
     "type": "Fristående kurs",
-    "description": "Grunder i objektorienterad programmering."
+    "description": "Introduktion till programmering med C# — variabler, loopar, metoder och objektorienterade grundprinciper."
   },
   {
     "period": "Sep 2023 - Okt 2023",
     "title": "Webbutveckling 1",
     "school": "Komvux Kumla",
     "type": "Fristående kurs",
-    "description": "HTML, CSS och grundläggande webbdesign."
-  },
-  {
-    "period": "2014 - 2017",
-    "title": "Samhällsvetenskapsprogrammet",
-    "school": "Ljusdals gymnasium",
-    "type": "Inriktning beteendevetenskap",
-    "description": "Gymnasieutbildning med fokus på psykologi, sociologi och kommunikation."
+    "description": "Grundläggande webbutveckling med HTML och CSS."
   }
 ]
