@@ -46,6 +46,7 @@
 }
 .info{
     margin: 1em auto;
+    text-align: left !important;
 }
 
 /* ===================== */
@@ -58,9 +59,16 @@
 /* ===================== */
 /* CARD BASE */
 /* ===================== */
+
+.privateNote {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    font-style: italic;
+    margin-top: 0.5em;
+    text-align: left;
+}
 .projectCard {
     background: #a9a9a949;
-    /* width: 260px; */
     border-radius: 1em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 1em;
@@ -72,7 +80,7 @@
 /* FEATURED CARD VARIANT */
 .projects.featured .projectCard {
     background: #b0b0b045;
-    width: 300px;
+    width: 290px;
     margin: 0 2em;
 }
 
@@ -109,12 +117,16 @@
     font-size: 1.05em;
     line-height: 1.6;
     margin-bottom: 1em;
+    text-align: start;
 }
 .truncated {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.ghButton:hover{
+  transform: none !important;
 }
 
 .readMore {
@@ -133,7 +145,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    /* text-align: center; */
     background: rgba(80, 80, 80, 0.2);
 }
 

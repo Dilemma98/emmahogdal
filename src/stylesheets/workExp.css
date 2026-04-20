@@ -5,12 +5,12 @@
     width: 10em;
     text-align: center;
     font-weight: 100;
-     font-size: 2.1em;
+    font-size: 2.1em;
     font-family: 'Skeina', sans-serif;
 }
 
 .work-wrapper {
-    padding: 7rem 2rem 4rem;
+    padding: 4rem 2rem 0rem;
     width: 92%;
     justify-self: center;
     margin-top: 2em;
@@ -42,10 +42,6 @@
     flex: 1;
     min-width: 80px;
     padding-right: 0.5rem;
-}
-
-.work-item--hoverable {
-    cursor: default;
 }
 
 .work-dot {
@@ -85,41 +81,16 @@
     font-size: 1em;
     opacity: 0.7;
     margin: 0;
+    font-weight: 600;
 }
 
-.work-tooltip {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    bottom: calc(100% + 8px);
-    left: 4em;
-    width: 200px;
-    background-color: rgba(30, 35, 25, 0.96);
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9em;
-    line-height: 1.6;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    z-index: 10;
-    transition: opacity 0.18s ease, visibility 0.18s ease;
+.work-description {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin-top: 0.4rem;
+    line-height: 1.5;
+    max-width: 25em;
 }
-
-.work-tooltip::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 12px;
-    border: 6px solid transparent;
-    border-top-color: rgba(30, 35, 25, 0.96);
-}
-
-.work-item--hoverable:hover .work-tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
 
 /* Mobil */
 @media screen and (max-width: 800px) {
@@ -135,7 +106,6 @@
         width: 73%;
         justify-self: flex-end;
         overflow: hidden;
-        /* background-color: green */
     }
 
     .work-row {
@@ -161,6 +131,7 @@
         padding-left: 0;
         margin-bottom: 2rem;
         gap: 1rem;
+        align-items: flex-start;
     }
 
     .work-dot {
@@ -169,19 +140,7 @@
         flex-shrink: 0;
     }
 
-    .work-tooltip {
-        bottom: unset;
-        top: calc(100% + 8px);
-        width: 85vw;
-        max-width: 220px;
-    }
-    .work-tooltip::after{
-        top: unset;
-        bottom: 100%;
-        border-top-color: transparent;
-        border-bottom-color: rgba(30, 35, 25, 0.96);
-    }
-    .work-item--hoverable{
-        width: 60%;
+    .work-description {
+        max-width: 100%;
     }
 }

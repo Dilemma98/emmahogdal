@@ -26,15 +26,8 @@ const WorkExp = () => {
   const rowTwo = sorted.slice(mid);
 
   const renderItem = (item: Work, index: number) => {
-    const classes = [
-      "work-item",
-      item.description ? "work-item--hoverable" : "",
-    ]
-      .filter(Boolean)
-      .join(" ");
-
     return (
-      <div key={index} className={classes}>
+      <div key={index} className="work-item">
         <div className={`work-dot${item.current ? " work-dot--current" : ""}`} />
         <div className="work-content">
           <p className="work-period">{item.period}</p>
@@ -45,17 +38,17 @@ const WorkExp = () => {
               {item.location ? ` · ${item.location}` : ""}
             </p>
           )}
+          {/* <hr/> */}
+          {item.description && (
+            <p className="work-description">{item.description}</p>
+          )}
         </div>
-        {item.description && (
-          <div className="work-tooltip">{item.description}</div>
-        )}
       </div>
     );
   };
 
   return (
     <div id="workExp">
-      {/* <h2>Work Experience</h2> */}
       <div className="work-wrapper">
         <div className="work-row">
           <div className="work-row-line" />

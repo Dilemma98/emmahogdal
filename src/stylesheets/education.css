@@ -10,12 +10,11 @@
     width: 10em;
     text-align: center;
     font-weight: 100;
-     font-size: 2.1em;
+    font-size: 2.1em;
     font-family: 'Skeina', sans-serif;
 }
 
 .timeline-wrapper {
-    /* overflow-x: auto; */
     padding: 12rem 2rem 3rem;
     width: 90%;
     justify-self: center;
@@ -44,17 +43,13 @@
 }
 
 .timeline-item {
-    position: relative;
+  position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 220px;
-    padding-right: 2rem;
-    flex-shrink: 0;
-}
-
-.timeline-item--hoverable {
-    cursor: default;
+    flex: 1;
+    min-width: 80px;
+    padding-right: 0.5rem;
 }
 
 .timeline-dot {
@@ -91,43 +86,18 @@
 }
 
 .timeline-meta {
-    font-size: 1em;
+       font-size: 1em;
     opacity: 0.7;
     margin: 0;
+    font-weight: 600;
 }
 
-/* Tooltip */
-.timeline-tooltip {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    bottom: calc(100% + 12px);
-    left: 0;
-    width: 220px;
-    background-color: rgba(30, 35, 25, 0.96);
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 0.9em;
-    line-height: 1.6;
-    padding: 0.75rem 1rem;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    z-index: 10;
-    transition: opacity 0.18s ease, visibility 0.18s ease;
-}
-
-.timeline-tooltip::after {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 12px;
-    border: 6px solid transparent;
-    border-top-color: rgba(30, 35, 25, 0.96);
-}
-
-.timeline-item--hoverable:hover .timeline-tooltip {
-    visibility: visible;
-    opacity: 1;
+.timeline-description {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    margin-top: 0.4rem;
+    line-height: 1.5;
+    max-width: 25em;
 }
 
 /* Mobil */
@@ -143,7 +113,6 @@
         margin-top: 0;
         width: 92%;
         justify-self: center;
-        /* background-color: green; */
     }
 
     .timeline-track {
@@ -168,24 +137,16 @@
         padding-left: 0;
         margin-bottom: 2rem;
         gap: 1rem;
+        align-items: flex-start;
     }
 
     .timeline-dot {
         margin-bottom: 0;
         margin-top: 3px;
+        flex-shrink: 0;
     }
 
-    .timeline-tooltip {
-        bottom: unset;
-        top: calc(100% + 8px);
-        width: 85vw;
-        max-width: 220px;
-    }
-
-    .timeline-tooltip::after {
-        top: unset;
-        bottom: 100%;
-        border-top-color: transparent;
-        border-bottom-color: rgba(30, 35, 25, 0.96);
+    .timeline-description {
+        max-width: 100%;
     }
 }

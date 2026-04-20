@@ -24,27 +24,24 @@ const Education = () => {
 
   return (
     <div id="education">
-      {/* <h2>Education</h2> */}
       <div className="timeline-wrapper">
         <div className="timeline-track">
           <div className="timeline-line" />⦿
           {sorted.map((item, index) => (
-            <div
-              key={index}
-              className={`timeline-item${item.description ? " timeline-item--hoverable" : ""}`}
-            >
+            <div key={index} className="timeline-item">
               <div className={`timeline-dot${item.current ? " timeline-dot--current" : ""}`} />
               <div className="timeline-content">
                 <p className="timeline-period">{item.period}</p>
                 <h4 className="timeline-title">{item.title}</h4>
                 <p className="timeline-meta">{item.school} · {item.type}</p>
+                {/* <hr/> */}
+                {item.description && (
+                  <p className="timeline-description">{item.description}</p>
+                )}
               </div>
-              {item.description && (
-                <div className="timeline-tooltip">{item.description}</div>
-              )}
             </div>
           ))}
-        ►
+          ►
         </div>
       </div>
     </div>

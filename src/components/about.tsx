@@ -10,10 +10,10 @@ const About = () => {
           and a server that communicates - chef's kiss!
         </p>
         <p>
-          I'm always working on improving how I structure my code and finding
-          more thoughtful solutions. My goal is to keep growing as a developer
-          and expand my understanding across the full stack, and hopefully
-          contribute to projects that actually mean something.
+          I enjoy improving how I structure my code and building applications that
+          are both functional and easy to use. I like working across the full stack,
+          especially with API-driven and real-time systems, and I’m always trying to
+          write cleaner and more maintainable solutions as I grow as a developer.
         </p>
       </div>
     </div>
