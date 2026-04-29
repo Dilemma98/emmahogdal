@@ -1,8 +1,13 @@
 [
   {
-    "title": "CRM application",
-    "description": "Mobile application developed during my internship using React Native, Expo, and TypeScript. Integrated with the company’s existing backend API and implemented secure, encrypted data communication. Gained hands-on experience building production-ready mobile interfaces and working within a real-world development environment.",
-    "image": "images/CRMapp.png",
+    "title": "CRM application (Notyfile)",
+    "description": "Mobile CRM application developed at Notyfile using React Native, Expo, and TypeScript. Integrated with an existing backend API and built for real-world usage. Focused on secure data handling, performance, and maintainable architecture.",
+    "images": [
+      "images/login.png",
+      "images/activity.png",
+      "images/meeting.png"
+    ],
+    "image": "images/login.png",
     "link": "",
     "featured": true,
     "inProgress": true,
