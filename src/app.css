@@ -1,0 +1,32 @@
+* { cursor: none; }
+
+.cursor-dot {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: #555;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: background 0.2s;
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid #55555588;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+body.darkMode .cursor-ring {
+    border: 1.5px solid rgba(239, 239, 239, 0.425);
+}
+
+body.darkMode .cursor-dot{
+    background: #e1e1e1;
+}

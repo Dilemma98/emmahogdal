@@ -9,7 +9,7 @@
 }
 
 .darkmodeLightmodeBtn:hover {
-    cursor: pointer;
+    /* cursor: pointer; */
     transform: translateY(-4px);
 }
 

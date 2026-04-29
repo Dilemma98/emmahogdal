@@ -6,6 +6,8 @@ import PortfolioPage from "./pages/portfoliopage";
 import "./stylesheets/header.css";
 import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import DownloadCvBtn from "./components/downloadCV";
+import "./app.css";
+import CustomCursor from "./components/customCursor";
 
 const AppContent = () => {
   const location = useLocation();
@@ -15,6 +17,7 @@ const AppContent = () => {
     <>
       <Header />
       {showBtn && <DownloadCvBtn />}
+      <CustomCursor />
       <Routes>
         <Route path="/" element={<StartPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
