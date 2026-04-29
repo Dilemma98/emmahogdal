@@ -1,8 +1,9 @@
 import "../stylesheets/portfolio.css";
 import { useEffect, useState } from "react";
 import Switch from "./switch";
+import ProjectImage from "./projectImage";
 
-interface Project {
+export interface Project {
   title: string;
   description: string;
   image: string;
@@ -11,11 +12,14 @@ interface Project {
   inProgress: boolean;
   privaterepo?: boolean;
   live?: boolean;
+  images?: string[];
 }
 
 const Portfolio = () => {
   const [projects, setProjects] = useState<Project[]>([]);
   const [expanded, setExpanded] = useState<Set<string>>(new Set());
+  // const [currentImage, setCurrentImage] = useState(0);
+  // const images = projects.images ?? [project.image]; 
 
   const featuredProjects = projects.filter((p) => p.featured);
   const otherProjects = projects.filter((p) => !p.featured);
@@ -27,6 +31,14 @@ const Portfolio = () => {
       .catch((error) => console.error("Fel vid hämtning:", error));
   }, []);
 
+  // useEffect(() => {
+  //   if(images.length <= 1) return
+  //   const interval = setInterval(() => {
+  //     setCurrentImage(prev => (prev + 1) % images.length);
+  //   }, 3000);
+  //   return () => clearInterval(interval);
+  // }, [images.length]);
+
   const toggleExpanded = (key: string) => {
     setExpanded((prev) => {
       const next = new Set(prev);
@@ -37,7 +49,7 @@ const Portfolio = () => {
 
   const renderCard = (project: Project, key: string) => (
     <div className="projectCard" key={key}>
-      {project.image && <img src={project.image} alt={project.title} />}
+     <ProjectImage project={project} />
       <h3>{project.title}</h3>
       <p className={expanded.has(key) ? "" : "truncated"}>
         {project.description}
@@ -53,7 +65,7 @@ const Portfolio = () => {
         )}
         {!project.link && project.privaterepo && (
           <p className="privateNote">
-            Source code not publicly available.
+            Codebase not publicly available.
           </p>
         )}
       </div>
@@ -68,13 +80,6 @@ const Portfolio = () => {
         {featuredProjects.map((project, i) =>
           renderCard(project, `featured-${i}`),
         )}
-        {/* <div className="projectCard infoCard">
-          <p className="info">
-            A selection of my most relevant work including <b>fullstack</b>{" "}
-            applications, <b>mobile</b> development and <b>real-time</b>{" "}
-            systems.
-          </p>
-        </div> */}
       </div>
 
       <h3 className="featuredOrNotHeader">Other projects</h3>
