@@ -1,7 +1,7 @@
 [
   {
     "title": "CRM application (Notyfile)",
-    "description": "Mobile CRM application developed at Notyfile using React Native, Expo, and TypeScript. Integrated with an existing backend API and built for real-world usage. Focused on secure data handling, performance, and maintainable architecture.",
+    "description": "Mobile CRM application developed at Notyfile using React Native, Expo, and TypeScript. Built for real-world usage and integrated with an existing backend API featuring encrypted data handling. The app includes activity management, meeting booking, customer and contact management, and a social feed. All structured around reusable components and shared React contexts for maintainable and scalable architecture.",
     "images": [
       "images/login.png",
       "images/activity.png",
