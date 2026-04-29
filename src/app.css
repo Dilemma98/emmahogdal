@@ -1,4 +1,6 @@
-* { cursor: none; }
+*, *::before, *::after, a, button, input, textarea, select {
+  cursor: none !important;
+}
 
 .cursor-dot {
   position: fixed;
