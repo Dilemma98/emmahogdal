@@ -95,6 +95,7 @@
 
 /* HOVER */
 .projectCard:hover {
+    cursor: pointer;
     transform: translateY(-6px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
@@ -110,7 +111,7 @@
 .projectCard .imageWrapper {
     justify-self: center;
     width: 100%;
-    height: 350px;  /* fast höjd för alla kort */
+    height: 370px;  /* fast höjd för alla kort */
     overflow: hidden;
     border-radius: 0.8em;
     display: flex;

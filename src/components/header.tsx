@@ -7,8 +7,10 @@ const Header = () => {
       <h1>
         <Link to="/">Emma Högdal</Link>
       </h1>
+      
 
       <nav className="navBar">
+       
         <ul>
           <li>
             <NavLink

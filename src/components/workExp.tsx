@@ -28,6 +28,7 @@ const WorkExp = () => {
   const renderItem = (item: Work, index: number) => {
     return (
       <div key={index} className="work-item">
+
         <div className={`work-dot${item.current ? " work-dot--current" : ""}`} />
         <div className="work-content">
           <p className="work-period">{item.period}</p>

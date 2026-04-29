@@ -9,7 +9,7 @@ const ProjectImage = ({ project }: { project: Project }) => {
     if (images.length <= 1) return;
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 3000);
+    }, 2500);
     return () => clearInterval(interval);
   }, [images.length]);
 

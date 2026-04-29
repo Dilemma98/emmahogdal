@@ -48,16 +48,16 @@ const Portfolio = () => {
   };
 
   const renderCard = (project: Project, key: string) => (
-    <div className="projectCard" key={key}>
+    <div className="projectCard" onClick={() => toggleExpanded(key)}key={key}>
      <ProjectImage project={project} />
       <h3>{project.title}</h3>
       <p className={expanded.has(key) ? "" : "truncated"}>
         {project.description}
       </p>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <button className="readMore" onClick={() => toggleExpanded(key)}>
+        <button className="readMore">
           {expanded.has(key) ? "▲" : "▼"}
-        </button>
+        </button> 
         {project.link && (
           <a href={project.link} target="_blank" rel="noreferrer" className="ghButton">
             {project.live ? "Live" : "GitHub"}
