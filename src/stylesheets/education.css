@@ -49,18 +49,31 @@
     align-items: center;
     flex: 1;
     min-width: 80px;
-    padding-right: 0.5rem;
+     max-width: 25em;
+    margin: 1em auto;
+     background: #c7c4bf65;
+    border-radius: 1em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1em 1.5em;
+    position: relative;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.darkMode .timeline-item {
+    background: rgba(90, 88, 85, 0.6);
 }
 
 .timeline-dot {
-    width: 16px;
-    height: 16px;
+  width: 14px;
+    height: 14px;
     border-radius: 50%;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
     box-sizing: border-box;
     flex-shrink: 0;
-    margin-bottom: 1rem;
+    margin-top: -2em;
+    margin-bottom: 0.8rem;
     z-index: 1;
 }
 
@@ -138,6 +151,7 @@
         margin-bottom: 2rem;
         gap: 1rem;
         align-items: flex-start;
+        
     }
 
     .timeline-dot {
