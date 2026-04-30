@@ -32,3 +32,26 @@ body.darkMode .cursor-ring {
 body.darkMode .cursor-dot{
     background: #e1e1e1;
 }
+
+.bubble-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+}
+
+body.lightMode .bubble {
+  background: rgba(255, 255, 255, 0.23);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+body.darkMode .bubble {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}

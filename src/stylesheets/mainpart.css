@@ -11,9 +11,11 @@
   width: 70%;
   /* height: 50vh; */
   display: flex;
-  margin: 3% auto 0 auto;
+  margin: 2% auto 0 auto;
   gap: 10em;
   font-size: 1.16em;
+     position: relative; 
+      z-index: 1;
 }
 
 .text,
@@ -25,6 +27,7 @@
 
 .techStack {
   margin-top: 2em;
+    z-index: 1;
 }
 
 .tech-bubbles {
@@ -61,6 +64,7 @@
   font-weight: 500;
   font-size: 2em;
   font-family: 'Skeina', sans-serif;
+    z-index: 1;
 }
 
 .mainPart h3,
@@ -73,6 +77,7 @@
   font-weight: 500;
   font-family: 'Skeina', sans-serif;
   font-size: 1.5em;
+    z-index: 1;
 }
 .p{
   text-align: center;
@@ -81,6 +86,7 @@
 .contactMe {
   margin-top: 9em;
   text-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
 
 .mainPart:hover {
@@ -207,7 +213,7 @@ body:not(.darkMode) .tech-bubbles span:hover {
     align-items: center;
     justify-content: center;
     height: auto;
-    margin: 2.5em auto;
+    /* margin: 2em auto; */
     gap: 9em;
     font-size: 1.1em;
   }

@@ -37,15 +37,18 @@
     align-items: flex-start;
     gap: 1.5em;
     width: 100%;
-    margin: 2em 0;
+    margin: 1em 0 4em 0;
 }
 
 .featuredOrNotHeader {
     font-family: 'Skeina', sans-serif;
     font-weight: 100;
     font-size: 1.8em;
+         position: relative; 
+      z-index: 1;
 }
-.info{
+
+.info {
     margin: 1em auto;
     text-align: left !important;
 }
@@ -54,7 +57,7 @@
 /* FEATURED VARIANT */
 /* ===================== */
 .projects.featured {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 /* ===================== */
@@ -68,9 +71,11 @@
     margin-top: 0.5em;
     text-align: left;
 }
+
 .projectCard {
     /* height: 35em; */
-    background: #a9a9a949;
+    /* background: #a9a9a949; */
+    background: #c7c4bf7c;
     border-radius: 1em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 1em;
@@ -79,10 +84,14 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+body.darkMode .projectCard {
+    background: rgba(90, 88, 85, 0.5);
+}
+
 /* FEATURED CARD VARIANT */
 .projects.featured .projectCard {
-    background: #b0b0b045;
-    width: 290px;
+    /* background: #c7c4bf7c; */
+    width: 300px;
     margin: 0 2em;
 }
 
@@ -90,7 +99,7 @@
 .projects:not(.featured) .projectCard {
     transform: scale(0.98);
     opacity: 0.95;
-    width: 240px;
+    width: 280px;
 }
 
 /* HOVER */
@@ -100,18 +109,11 @@
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
 
-/* IMAGE */
-/* .projectCard img {
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
-    border-radius: 0.8em;
-    background: transparent;
-} */
 .projectCard .imageWrapper {
     justify-self: center;
     width: 100%;
-    height: 370px;  /* fast höjd för alla kort */
+    height: 280px;
+    /* fast höjd för alla kort */
     overflow: hidden;
     border-radius: 0.8em;
     display: flex;
@@ -123,7 +125,8 @@
 .projectCard img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* fyller ytan, klipper om nödvändigt */
+    object-fit: cover;
+    /* fyller ytan, klipper om nödvändigt */
     border-radius: 0.8em;
 }
 
@@ -141,23 +144,25 @@
     margin-bottom: 1em;
     text-align: start;
 }
+
 .truncated {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
-.ghButton:hover{
-  transform: none !important;
+
+.ghButton:hover {
+    transform: none !important;
 }
 
 .readMore {
-  background: none;
-  border: none;
-  /* cursor: pointer; */
-  font-size: 1rem;
-  padding: 0;
-  margin-bottom: 2em;
+    background: none;
+    border: none;
+    /* cursor: pointer; */
+    font-size: 1rem;
+    padding: 0;
+    margin-bottom: 2em;
 }
 
 /* ===================== */
@@ -186,12 +191,10 @@
 
 /* nicer gradient option */
 .infoCard {
-    background: linear-gradient(
-        135deg,
-        rgba(120,120,120,0.25),
-        rgba(60,60,60,0.15)
-    );
-    border: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(135deg,
+            rgba(120, 120, 120, 0.25),
+            rgba(60, 60, 60, 0.15));
+    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* ===================== */
@@ -276,5 +279,21 @@
 
     .projects h3 {
         font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 1647px) {
+    .projects.featured .projectCard {
+        width: 350px;
+    }
+
+    .projects:not(.featured) .projectCard {
+        width: 330px;
+    }
+
+    .projectCard .imageWrapper {
+        width: 100%;
+        height: 370px;
+        /* fast höjd för alla kort */
     }
 }
