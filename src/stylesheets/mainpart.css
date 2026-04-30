@@ -1,11 +1,19 @@
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .page {
   animation: fadeIn 0.4s ease-in-out;
 }
+
 .mainPart {
   justify-content: center;
   width: 70%;
@@ -14,8 +22,8 @@
   margin: 2% auto 0 auto;
   gap: 10em;
   font-size: 1.16em;
-     position: relative; 
-      z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .text,
@@ -27,7 +35,7 @@
 
 .techStack {
   margin-top: 2em;
-    z-index: 1;
+  z-index: 1;
 }
 
 .tech-bubbles {
@@ -64,7 +72,7 @@
   font-weight: 500;
   font-size: 2em;
   font-family: 'Skeina', sans-serif;
-    z-index: 1;
+  z-index: 1;
 }
 
 .mainPart h3,
@@ -77,16 +85,17 @@
   font-weight: 500;
   font-family: 'Skeina', sans-serif;
   font-size: 1.5em;
-    z-index: 1;
+  z-index: 1;
 }
-.p{
+
+.p {
   text-align: center;
 }
 
 .contactMe {
   margin-top: 9em;
   text-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
-    z-index: 1;
+  z-index: 1;
 }
 
 .mainPart:hover {
@@ -105,8 +114,9 @@ a {
   font-size: 1.5em;
   transition: transform 0.2s ease;
 }
-a:hover{
-   transform: scale(1.3);
+
+a:hover {
+  transform: scale(1.3);
 }
 
 a:visited {
@@ -127,6 +137,7 @@ body:not(.darkMode) .tech-bubbles span {
 body:not(.darkMode) .tech-bubbles span:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
+
 /* === MOBIL (max 800px) === */
 @media screen and (max-width: 800px) {
   .mainPart {
@@ -138,20 +149,24 @@ body:not(.darkMode) .tech-bubbles span:hover {
     font-size: 1em;
     flex: 1;
   }
-  .aboutHeader{
+
+  .aboutHeader {
     margin-top: 1em;
   }
-  .techStack{
-    margin-top: 1em;
+
+  .techStack {
+    margin-top: 0em;
   }
-  .aboutDiv{
+
+  .aboutDiv {
     margin-top: -1em;
   }
-  .info{
+
+  .info {
     display: flex;
     flex-direction: column;
     /* justify-self: center; */
-    margin: 0 0 0 1em;
+    margin: -0.5em 0 0 1em !important;
   }
 
   .text,
@@ -159,24 +174,47 @@ body:not(.darkMode) .tech-bubbles span:hover {
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 1em; */
+    margin-top: -1em
   }
 
-  .tech-bubbles { gap: 0.5rem; }
+  .tech-bubbles {
+    gap: 0.5rem;
+  }
 
+  .techStack p {
+    margin-top: 0.5em;
+  }
   /* .mainPart .contactMe { margin-top: -1em; } */
-  .mainPart .contactMe .links { flex-direction: row; }
+  .mainPart .contactMe .links {
+    flex-direction: row;
+  }
 
-  .mainPart h2 { font-size: 1.7em; width: auto; }
-  .mainPart h3, .aboutHeader { font-size: 1.3em; width: auto; }
+  .mainPart h2 {
+    font-size: 1.7em;
+    width: auto;
+  }
 
-  .links { flex-direction: column; gap: 1em; }
-  a { font-size: 1.5em; }
-  .contactMe { 
+  .mainPart h3,
+  .aboutHeader {
+    font-size: 1.3em;
+    width: auto;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  a {
+    font-size: 1.5em;
+  }
+
+  .contactMe {
     position: absolute;
-    top: 0em;
-    right: 4em;
-   }
+    top: 47em;
+    right: 25%;
+    padding-bottom: 3em;
+  }
 }
 
 /* === TABLET / LITEN LAPTOP (801px - 1200px) === */
@@ -191,18 +229,43 @@ body:not(.darkMode) .tech-bubbles span:hover {
     font-size: 1em;
   }
 
-  .text { text-align: center; width: 70%; }
-  .techStack { width: 90%; margin: 0 auto; }
+  .text {
+    text-align: center;
+    width: 70%;
+  }
+
+  .techStack {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   /* .contactMe { margin-top: 2em; text-align: center; } */
-  .contactMe{
+  .contactMe {
     position: absolute;
     top: 0.5em;
     right: 6em;
   }
-  .links { flex-direction: row; justify-content: center; gap: 2em; }
-  a { font-size: 1.4em; }
-  .mainPart h2 { font-size: 1.8em; width: auto; }
-  .mainPart h3, .aboutHeader { font-size: 1.3em; width: auto; }
+
+  .links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  a {
+    font-size: 1.4em;
+  }
+
+  .mainPart h2 {
+    font-size: 1.8em;
+    width: auto;
+  }
+
+  .mainPart h3,
+  .aboutHeader {
+    font-size: 1.3em;
+    width: auto;
+  }
 }
 
 /* === LAPTOP (1201px - 1646px) === */
@@ -218,14 +281,46 @@ body:not(.darkMode) .tech-bubbles span:hover {
     font-size: 1.1em;
   }
 
-  .mainPart .imgMe { margin-top: -4em;}
-  .text { text-align: flex-start; width: 50%; }
-  .techStack { width: 90%; margin: 0 auto; }
-  .contactMe { margin-top: 2.5em; text-align: center; margin-left: 1em; }
-  .links { flex-direction: row; justify-content: center; gap: 2em; }
-  a { font-size: 1.4em; }
-  .mainPart h2 { font-size: 1.9em; width: auto; }
-  .mainPart h3, .aboutHeader { font-size: 1.4em; width: auto; }
+  .mainPart .imgMe {
+    margin-top: -4em;
+  }
+
+  .text {
+    text-align: flex-start;
+    width: 50%;
+  }
+
+  .techStack {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contactMe {
+    margin-top: 2.5em;
+    text-align: center;
+    margin-left: 1em;
+  }
+
+  .links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  a {
+    font-size: 1.4em;
+  }
+
+  .mainPart h2 {
+    font-size: 1.9em;
+    width: auto;
+  }
+
+  .mainPart h3,
+  .aboutHeader {
+    font-size: 1.4em;
+    width: auto;
+  }
 }
 
 /* === STOR SKÄRM (1647px+) === */
@@ -234,7 +329,8 @@ body:not(.darkMode) .tech-bubbles span:hover {
     margin: 6em auto;
     gap: 12em;
   }
-  .techStack{
+
+  .techStack {
     margin-top: 10em;
   }
 }
