@@ -94,6 +94,9 @@ body.darkMode .projectCard {
     width: 300px;
     margin: 0 2em;
 }
+.projects.featured .imageWrapper{
+     height: 380px;
+}
 
 /* NORMAL CARDS */
 .projects:not(.featured) .projectCard {
