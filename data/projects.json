@@ -1,5 +1,17 @@
 [
   {
+    "title": "Geocaching app",
+    "description": "Personal geocaching app built with React Native, Expo, and TypeScript. Imports GPX files from Geocaching.com, parses cache data including logs, and displays them on an interactive map with custom markers per cache type. Features GPS-based navigation, SQLite for offline storage, Zustand for state management, and automatic detection of found caches based on username matching in GPX logs.",
+    "images": [
+      "images/gc1.png",
+      "images/gc2.png",
+      "images/gc3.png"
+    ],
+    "link": "https://github.com/Dilemma98/GeocachingApp.git",
+    "featured": "true",
+    "inProgress": "true"
+  },
+  {
     "title": "CRM application (Notyfile)",
     "description": "Mobile CRM application developed at Notyfile using React Native, Expo, and TypeScript. Built for real-world usage and integrated with an existing backend API featuring encrypted data handling. The app includes activity management, meeting booking, customer and contact management, and a social feed. All structured around reusable components and shared React contexts for maintainable and scalable architecture.",
     "images": [
@@ -24,10 +36,10 @@
   },
   {
     "title": "InnoviaHub",
-   "description": "Fullstack application for office booking and user management built with React and .NET 9. Implements role-based access control with admin and user accounts, enabling different permissions and workflows. Includes real-time updates for booking changes to ensure synchronized user experience. The project also explored AI-assisted features as part of experimental functionality. Designed to streamline workspace reservations with a scalable and maintainable architecture.",
+    "description": "Fullstack application for office booking and user management built with React and .NET 9. Implements role-based access control with admin and user accounts, enabling different permissions and workflows. Includes real-time updates for booking changes to ensure synchronized user experience. The project also explored AI-assisted features as part of experimental functionality. Designed to streamline workspace reservations with a scalable and maintainable architecture.",
     "image": "images/InnoviaHub.png",
     "link": "https://github.com/Dilemma98/InnoviaHub",
-    "featured": true,
+    "featured": false,
     "inProgress": false
   },
   {
