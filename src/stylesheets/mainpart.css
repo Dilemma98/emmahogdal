@@ -138,8 +138,76 @@ body:not(.darkMode) .tech-bubbles span:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (max-width: 500px) {
+  .mainPart {
+    flex-direction: column;
+    width: 92vw;
+    margin: 0 auto;
+    gap: 1.5em;
+    font-size: 0.95em;
+  }
+
+  .text,
+  .techStack {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .aboutHeader {
+    margin-top: 1em;
+  }
+
+  .techStack {
+    margin-top: 0;
+  }
+
+  .tech-bubbles {
+    gap: 0.5rem;
+  }
+
+  .tech-bubbles span {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+  .mainPart h2 {
+    font-size: 1.5em;
+    width: auto;
+  }
+
+  .mainPart h3,
+  .aboutHeader {
+    font-size: 1.2em;
+    width: auto;
+  }
+
+  .links {
+    flex-direction: row;
+    gap: 1.5em;
+  }
+
+  a {
+    font-size: 1.3em;
+  }
+
+  .info {
+    margin: 0 !important;
+    align-items: center;
+  }
+   .contactMe {
+    position: absolute;
+    top: -6em;
+    right: 15%;
+    padding-bottom: 3em;
+  }
+}
+
 /* === MOBIL (max 800px) === */
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 501px) and (max-width: 800px) {
   .mainPart {
     flex-direction: column;
     width: 90vw;
@@ -155,7 +223,8 @@ body:not(.darkMode) .tech-bubbles span:hover {
   }
 
   .techStack {
-    margin-top: 0em;
+    margin-top: 1em;
+    margin-bottom: 5em;
   }
 
   .aboutDiv {
@@ -211,8 +280,8 @@ body:not(.darkMode) .tech-bubbles span:hover {
 
   .contactMe {
     position: absolute;
-    top: 49em;
-    right: 25%;
+    top: -1em;
+    right: 15%;
     padding-bottom: 3em;
   }
 }
