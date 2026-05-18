@@ -204,6 +204,10 @@ body:not(.darkMode) .tech-bubbles span:hover {
     right: 15%;
     padding-bottom: 3em;
   }
+   .techStack {
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
 }
 
 /* === MOBIL (max 800px) === */
