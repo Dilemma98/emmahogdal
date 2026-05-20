@@ -4,11 +4,19 @@
     flex-direction: column;
     position: relative;
 }
-.surpriseHide{
+.surpriseHide {
     position: absolute;
+    top: 3%;
+    left: 0;
+    width: 100%;
     opacity: 0;
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
+}
+.imgWrapper {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
 }
 
 .imgDiv:hover .surpriseHide{
@@ -52,12 +60,19 @@ body.darkMode .imgMe{
         left: 3em;
         /* flex-direction: row; */
     }
+    .surpriseHide {
+        left: 25%;
+    }
 }
 @media screen and (min-width: 1201px) and (max-width: 1646px) {
 
     .imgDiv{
         margin-top: 3em;
     }
+     .surpriseHide {
+        top: -30%;
+    }
+  
 }
 @media screen and (min-width: 801px) and (max-width: 1200px) {
     .imgDiv{
@@ -85,6 +100,10 @@ body.darkMode .imgMe{
     .subtitleStyle{
         line-height: 1;
         margin-top: 1em;
+    }
+       .surpriseHide {
+        top: -45%;
+        left: 75%;
     }
 
 }

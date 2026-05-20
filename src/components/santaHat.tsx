@@ -1,15 +1,7 @@
 export default function SantaHat() {
   return (
-    <div
-      style={{
-        position: "absolute",
-        top: 8,
-        left: 10,
-        width: 170,
-        transform: "rotate(-2deg)",
-        filter: "drop-shadow(0 4px 6px rgba(0,0,0,0.2))",
-      }}
-    >
+      <div style={{ width: "85%", transform: "rotate(2deg)", filter: "drop-shadow(0 4px 6px rgba(0,0,0,0.2))" }}>
+
       <svg
         viewBox="0 0 300 400"
         width="100%"

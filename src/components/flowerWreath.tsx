@@ -1,6 +1,6 @@
 export default function FlowerWreath() {
   return (
-    <div style={{ position: "absolute", top: 20, left: 13, width: 190, transform: "rotate(-2deg)", filter: "drop-shadow(0 4px 6px rgba(0,0,0,0.2))" }}>
+    <div style={{ width: "100%", transform: "rotate(2deg)", filter: "drop-shadow(0 4px 6px rgba(0,0,0,0.2))" }}>
       <svg width="100%" viewBox="0 0 680 420" role="img" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <style>{`

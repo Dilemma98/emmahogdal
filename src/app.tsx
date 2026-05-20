@@ -16,7 +16,7 @@ import CustomCursor from "./components/customCursor";
 
 const AppContent = () => {
   const location = useLocation();
-  const showBtn = ["/education", "/workexperience"].includes(location.pathname);
+  const showBtn = ["/education", "/workexperience", "/portfolio"].includes(location.pathname);
 
   return (
     <>

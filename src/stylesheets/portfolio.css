@@ -73,8 +73,6 @@
 }
 
 .projectCard {
-    /* height: 35em; */
-    /* background: #a9a9a949; */
     background: #c7c4bf7c;
     border-radius: 1em;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -90,13 +88,12 @@ body.darkMode .projectCard {
 
 /* FEATURED CARD VARIANT */
 .projects.featured .projectCard {
-    /* background: #c7c4bf7c; */
     width: 300px;
     margin: 0 2em;
 }
 
 .projects.featured .imageWrapper {
-    height: 380px;
+    height: 400px;
 }
 
 /* NORMAL CARDS */
@@ -106,9 +103,7 @@ body.darkMode .projectCard {
     width: 280px;
 }
 
-/* HOVER */
 .projectCard:hover {
-    /* cursor: pointer; */
     transform: translateY(-6px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
 }
@@ -117,7 +112,6 @@ body.darkMode .projectCard {
     justify-self: center;
     width: 100%;
     height: 280px;
-    /* fast höjd för alla kort */
     overflow: hidden;
     border-radius: 0.8em;
     display: flex;
@@ -130,18 +124,15 @@ body.darkMode .projectCard {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* fyller ytan, klipper om nödvändigt */
     border-radius: 0.8em;
 }
 
-/* TITLE */
 .projects h3 {
     font-family: 'Skeina', sans-serif;
     font-weight: 600;
     margin: 1em 0;
 }
 
-/* TEXT */
 .projectCard p {
     font-size: 1.05em;
     line-height: 1.6;
@@ -163,20 +154,15 @@ body.darkMode .projectCard {
 .readMore {
     background: none;
     border: none;
-    /* cursor: pointer; */
     font-size: 1rem;
     padding: 0;
     margin-bottom: 2em;
 }
 
-/* ===================== */
-/* FEATURED INFO CARD */
-/* ===================== */
 .infoCard {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* text-align: center; */
     background: rgba(80, 80, 80, 0.2);
 }
 
@@ -193,7 +179,6 @@ body.darkMode .projectCard {
     opacity: 0.85;
 }
 
-/* nicer gradient option */
 .infoCard {
     background: linear-gradient(135deg,
             rgba(120, 120, 120, 0.25),
@@ -201,9 +186,6 @@ body.darkMode .projectCard {
     border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ===================== */
-/* BADGE */
-/* ===================== */
 .workingOnBadge {
     position: absolute;
     top: 0.5em;
@@ -217,9 +199,6 @@ body.darkMode .projectCard {
     border-radius: 2em;
 }
 
-/* ===================== */
-/* LINK BUTTON */
-/* ===================== */
 #portfolio a {
     font-size: 0.9em;
     text-decoration: none;
