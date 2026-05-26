@@ -1,0 +1,108 @@
+.contactMe {
+  margin-top: 10em;
+  text-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.contactMe h2 {
+  font-family: 'Skeina', sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.contactMe > p {
+  text-align: center;
+  margin-bottom: 1.2em;
+  opacity: 0.75;
+  font-size: 0.9em;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.field label {
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+
+.field input,
+.field textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.4em 0.2em;
+  outline: none;
+  transition: border-color 0.2s ease;
+  resize: none;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  opacity: 0.35;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.7);
+   background: transparent !important;
+}
+
+body:not(.darkMode) .field input,
+body:not(.darkMode) .field textarea {
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+  color: #333;
+}
+
+body:not(.darkMode) .field input:focus,
+body:not(.darkMode) .field textarea:focus {
+  border-bottom-color: rgba(0, 0, 0, 0.6);
+}
+
+.contactMe button {
+  margin-top: 0.5em;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  padding: 0.55em 1.4em;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-self: center;
+}
+
+.contactMe button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+body:not(.darkMode) .contactMe button {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+body:not(.darkMode) .contactMe button:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.contactMe .links {
+  margin-top: 2em;
+}
