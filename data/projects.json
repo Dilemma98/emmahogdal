@@ -22,7 +22,7 @@
     "image": "images/login.png",
     "link": "",
     "featured": true,
-    "inProgress": true,
+    "inProgress": false,
     "privaterepo": true
   },
   {
