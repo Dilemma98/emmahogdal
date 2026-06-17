@@ -1,26 +1,24 @@
+import CustomCursor from "./components/customCursor";
+import Switch from "./components/switch";
 import Header from "./components/header";
-import StartPage from "./pages/startpage";
-import EducationPage from "./pages/educationpage";
-import WorkExpPage from "./pages/workexppage";
-import PortfolioPage from "./pages/portfoliopage";
-import "./stylesheets/header.css";
+// import ImgMe from "./components/imgMe";
+import Sidebar from "./components/sidebar";
+import HomePage from "./pages/homePage";
+import ProjectsPage from "./pages/projectsPage";
+import ResumePage from "./pages/resumePage";
+    import ContactPage from "./pages/contactPage";
+    import AboutPage from "./pages/aboutPage";
 import {
   HashRouter as Router,
   Routes,
   Route,
-  useLocation,
 } from "react-router-dom";
-import DownloadCvBtn from "./components/downloadCV";
-import "./app.css";
-import CustomCursor from "./components/customCursor";
+
 
 const AppContent = () => {
-  const location = useLocation();
-  const showBtn = ["/education", "/workexperience", "/portfolio"].includes(location.pathname);
-
-  return (
-    <>
-      <div className="bubble-container">
+ return(
+   <>
+    <div className="bubble-container">
         {[
           { left: "30%", top: "2%", size: 50 },
           { left: "8%",  top: "12%", size: 120 },
@@ -46,26 +44,27 @@ const AppContent = () => {
           />
         ))}
       </div>
-
-      <Header />
-      {showBtn && <DownloadCvBtn />}
-      <CustomCursor />
-      <Routes>
-        <Route path="/" element={<StartPage />} />
-        <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/education" element={<EducationPage />} />
-        <Route path="/workexperience" element={<WorkExpPage />} />
-      </Routes>
-    </>
-  );
-};
-
-const App = () => {
-  return (
+    <CustomCursor />
+    <Header />
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/home" element={<HomePage />} />
+      <Route path="/projects" element={<ProjectsPage />} />
+      <Route path="/resume" element={<ResumePage />} />
+      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/about" element={<AboutPage />} />
+    </Routes>
+    <Sidebar />
+    <Switch />
+  </>
+ )
+}
+function App() {
+   return(
     <Router>
-      <AppContent />
+    <AppContent />
     </Router>
-  );
-};
+   );
+}
 
-export default App;
+export default App

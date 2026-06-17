@@ -1,0 +1,47 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: fit-content;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    gap: 2em;
+}
+
+.line {
+    width: 1px;
+    height: 15vh;
+    background-color: currentColor;
+    opacity: 0.4;
+}
+
+.social-links {
+    list-style: none;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding: 0;
+    margin: 0;
+}
+.social-links li a{
+    color: inherit;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 2px rgb(117, 119, 115);
+}
+.social-links li:hover {
+  color: #ff6347;
+}
+.sidebar .social-links li a.lightMode {
+    color: inherit;
+    text-decoration: none;
+}
+.sidebar .social-links li a.darkMode {
+    color: inherit;
+    text-decoration: none;
+}
+

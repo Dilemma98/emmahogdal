@@ -1,108 +1,103 @@
-.contactMe {
-  margin-top: 10em;
-  text-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
-  z-index: 1;
+.contactPage {
+    min-height: 100vh;
+    padding: 8em 4em 4em 4em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
 }
 
-.contactMe h2 {
-  font-family: 'Skeina', sans-serif;
-  font-weight: 500;
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 0.2em;
-}
-
-.contactMe > p {
-  text-align: center;
-  margin-bottom: 1.2em;
-  opacity: 0.75;
-  font-size: 0.9em;
+.contactPage p {
+    font-family: 'Skeina', sans-serif;
+    font-size: 1.7em;
+    font-weight: 100;
+    opacity: 0.8;
+    letter-spacing: 0.05em;
 }
 
 .fields {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75em;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    width: 100%;
+    max-width: 540px;
+    z-index: 1000;
 }
 
 .field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
 }
 
 .field label {
-  font-size: 0.8em;
-  letter-spacing: 1px;
-  opacity: 0.7;
-  text-transform: uppercase;
+    font-size: 0.85em;
+    opacity: 0.6;
+    letter-spacing: 0.05em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .field input,
 .field textarea {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  color: inherit;
-  font-family: inherit;
-  font-size: 1em;
-  padding: 0.4em 0.2em;
-  outline: none;
-  transition: border-color 0.2s ease;
-  resize: none;
-}
-
-.field input::placeholder,
-.field textarea::placeholder {
-  opacity: 0.35;
+    background: rgba(90, 88, 85, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.7em;
+    padding: 0.8em 1em;
+    color: inherit;
+    font-size: 1em;
+    font-family: inherit;
+    outline: none;
+    transition: border 0.2s ease;
+    resize: none;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .field input:focus,
 .field textarea:focus {
-  border-bottom-color: rgba(255, 255, 255, 0.7);
-   background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-body:not(.darkMode) .field input,
-body:not(.darkMode) .field textarea {
-  border-bottom-color: rgba(0, 0, 0, 0.25);
-  color: #333;
+.fields button {
+    align-self: flex-end;
+    background: #545454;
+    color: #fff;
+    border: none;
+    padding: 0.7em 1.8em;
+    border-radius: 5em;
+    font-size: 0.95em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-body:not(.darkMode) .field input:focus,
-body:not(.darkMode) .field textarea:focus {
-  border-bottom-color: rgba(0, 0, 0, 0.6);
+.fields button:hover {
+    background: #4a4a4a;
 }
 
-.contactMe button {
-  margin-top: 0.5em;
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: inherit;
-  font-family: inherit;
-  font-size: 0.9em;
-  letter-spacing: 1px;
-  padding: 0.55em 1.4em;
-  border-radius: 9999px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  align-self: center;
+.links {
+    display: flex;
+    gap: 1.5em;
 }
 
-.contactMe button:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: scale(1.05);
+.links a {
+    font-size: 1.5em;
+    color: inherit;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    text-decoration: none;
 }
 
-body:not(.darkMode) .contactMe button {
-  border-color: rgba(0, 0, 0, 0.2);
+.links a:hover {
+    opacity: 1;
 }
 
-body:not(.darkMode) .contactMe button:hover {
-  background: rgba(0, 0, 0, 0.06);
-}
-
-.contactMe .links {
-  margin-top: 2em;
+@media screen and (max-width: 800px) {
+    .contactPage {
+        padding: 6em 1.5em 3em 1.5em;
+    }
 }

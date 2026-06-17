@@ -1,26 +1,61 @@
-import "../stylesheets/mainpart.css";
 import "../stylesheets/contact.css";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import Message from "./contactMessage";
 
-const ContactMe = () => {
+export default function Contact() {
+
+    const [message, setMessage] = useState("");
+   const [isError, setIsError] = useState(false);
+    const [showMessage, setShowMessage] = useState(false);
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const handleSubmit = (e: React.FormEvent) => {
+
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current!,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      )
+     .then(() => {
+  formRef.current?.reset();
+
+  setIsError(false);
+  setMessage("Tack för ditt meddelande! Jag svarar så snart jag kan.");
+  setShowMessage(true);
+})
+.catch(() => { setIsError(true); setMessage("Hoppsan, nu gick något fel. Testa gärna igen"); setShowMessage(true); })
+  };
   return (
-    <div className="contactMe">
-      <h2>Let´s connect!</h2>
-      <div className="links">
-                <a href="mailto:emma.h98@outlook.com" ><i className="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/emma-h%C3%B6gdal-07167b326/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Dilemma98" target="_blank"><i className="fa-brands fa-github"></i></a>
-            </div>
-      {/* <p>Har du någon fråga? Hör gärna av dig!</p>
+    <>
+      <p>Har du någon fråga? Hör gärna av dig!</p>
 
-      <div className="fields">
+      <form className="fields" ref={formRef} onSubmit={handleSubmit}>
         <div className="field">
           <label htmlFor="email">Från</label>
-          <input id="email" type="email" placeholder="din@email.com" />
+          <input
+            id="email"
+            name="from_email"
+            type="email"
+            placeholder="din@email.com"
+            required
+          />
         </div>
 
         <div className="field">
           <label htmlFor="name">Namn</label>
-          <input id="name" type="text" placeholder="Ditt namn" />
+          <input
+            id="name"
+            name="from_name"
+            type="text"
+            placeholder="Ditt namn"
+            required
+          />
         </div>
 
         <div className="field">
@@ -29,13 +64,15 @@ const ContactMe = () => {
             id="message"
             rows={5}
             placeholder="Skriv ditt meddelande här..."
+            name="message"
+            required
           />
         </div>
 
-        <button>
+        <button type="submit">
           Skicka <i className="fa-solid fa-paper-plane"></i>
         </button>
-      </div>
+      </form>
 
       <div className="links">
         <a href="mailto:emma.h98@outlook.com">
@@ -50,9 +87,9 @@ const ContactMe = () => {
         <a href="https://github.com/Dilemma98" target="_blank">
           <i className="fa-brands fa-github"></i>
         </a>
-      </div> */}
-    </div>
-  );
-};
+      </div>
 
-export default ContactMe;
+{showMessage && <Message message={message} isError={isError} onClose={() => setShowMessage(false)} />}
+    </>
+  );
+}

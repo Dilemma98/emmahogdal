@@ -1,23 +1,45 @@
-const About = () => {
+import Img from "../assets/image.png";
+import BagImg from "../assets/bagImg.jpg";
+import GeocachingImg from "../assets/geocachingImg.jpeg";
+import DeskImg from "../assets/deskImg1.jpg";
+
+import "../stylesheets/about.css";
+
+export default function About() {
   return (
     <div className="aboutDiv">
-      <h2 className="aboutHeader">About me</h2>
-      <div className="info">
+      <div className="text">
+        <p>Hej! Kul att du hittade hit!</p>
         <p>
-          Hi, I'm Emma! Since August 2024 I've been studying full-stack web
-          development, and somewhere along the way I realised my heart beats
-          extra for frontend. Then again, the feeling of creating both a client 
-          and a server that communicates - chef's kiss!
+          Jag heter Emma och är en väldigt kreativ själ som gärna stickar, virkar eller syr.
+          Och nu på senare tid, även programmerar.
         </p>
         <p>
-          I enjoy improving how I structure my code and building applications that
-          are both functional and easy to use. I like working across the full stack,
-          especially with API-driven and real-time systems, and I’m always trying to
-          write cleaner and more maintainable solutions as I grow as a developer.
+          Mitt intresse för programmering väcktes under föräldraledigheten 2022.
+          Nyfikenheten växte snabbt och ledde till studier inom webbutveckling
+          och programmering, innan jag 2024 påbörjade min utbildning till
+          fullstack-utvecklare inom .NET på Campus Värnamo och i maj 2026 tog jag examen.
         </p>
+        <p>
+          På fritiden spenderar jag gärna tid med min dotter. Förra sommaren introducerade jag henne för geocaching, och i år blev jag inspirerad att utveckla en egen
+          geocaching-app som jag fortfarande arbetar vidare på. För mig handlar
+          programmering om samma sak som alla mina kreativa intressen, att
+          skapa något från grunden, lära mig nytt och hitta smarta lösningar på
+          problem.
+        </p>
+      </div>
+      <div className="images">
+        <img
+          src={Img}
+          alt="Pic of Emma and her daughter"
+          className="aboutImg"
+        />
+        {/* <img src={ForrestImg} className="forrestImg" /> */}
+        {/* <img src={BoatImg} className="boatImg" /> */}
+        <img src={GeocachingImg} className="geocachingImg" />
+        <img src={BagImg} className="bagImg" />
+        <img src={DeskImg} className="deskImg" />
       </div>
     </div>
   );
-};
-
-export default About;
+}

@@ -1,5 +1,5 @@
-// components/CustomCursor.tsx
 import { useEffect } from "react";
+import "../stylesheets/customCursor.css";
 
 export default function CustomCursor() {
   useEffect(() => {

@@ -8,8 +8,9 @@
       "images/gc3.png"
     ],
     "link": "https://github.com/Dilemma98/GeocachingApp.git",
-    "featured": "true",
-    "inProgress": "true"
+    "featured": true,
+    "inProgress": true,
+    "tags": ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"]
   },
   {
     "title": "CRM application (Notyfile)",
@@ -23,7 +24,8 @@
     "link": "",
     "featured": true,
     "inProgress": false,
-    "privaterepo": true
+    "privaterepo": true,
+    "tags": ["React Native", "Expo", "TypeScript", "REST API", "WebSockets"]
   },
   {
     "title": "MiniChat",
@@ -32,15 +34,17 @@
     "link": "https://mini-chat-ruby.vercel.app/",
     "featured": true,
     "inProgress": false,
-    "live": true
+    "live": true,
+    "tags": ["React", "TypeScript", "Node.js", "Express", "Supabase", "WebSockets"]
   },
   {
     "title": "InnoviaHub",
-    "description": "Fullstack application for office booking and user management built with React and .NET 9. Implements role-based access control with admin and user accounts, enabling different permissions and workflows. Includes real-time updates for booking changes to ensure synchronized user experience. The project also explored AI-assisted features as part of experimental functionality. Designed to streamline workspace reservations with a scalable and maintainable architecture.",
+    "description": "Fullstack application for office booking and user management built with React and .NET 9. Implements role-based access control with admin and user accounts, enabling different permissions and workflows. Includes real-time updates for booking changes to ensure synchronized user experience.",
     "image": "images/InnoviaHub.png",
     "link": "https://github.com/Dilemma98/InnoviaHub",
     "featured": false,
-    "inProgress": false
+    "inProgress": false,
+    "tags": ["React", "TypeScript", ".NET 9", "REST API", "SignalR"]
   },
   {
     "title": "FrienDate",
@@ -48,7 +52,8 @@
     "image": "images/FrienDate.png",
     "link": "https://github.com/Dilemma98/FrienDate",
     "featured": false,
-    "inProgress": false
+    "inProgress": false,
+    "tags": ["React", "TypeScript", "Vite"]
   },
   {
     "title": "SpaMedSpa",
@@ -56,7 +61,8 @@
     "image": "images/StudioSpa.png",
     "link": "https://github.com/Dilemma98/SpaMedSpa",
     "featured": false,
-    "inProgress": false
+    "inProgress": false,
+    "tags": ["React", "TypeScript", "Vite", "Tailwind CSS"]
   },
   {
     "title": "FilmStudio",
@@ -64,6 +70,7 @@
     "image": "images/FilmStudion.png",
     "link": "https://github.com/Dilemma98/Filmstudion",
     "featured": false,
-    "inProgress": false
+    "inProgress": false,
+    "tags": ["React", "TypeScript", ".NET", "REST API"]
   }
 ]

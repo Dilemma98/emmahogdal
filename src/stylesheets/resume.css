@@ -1,0 +1,97 @@
+.resumePage {
+    min-height: 100vh;
+    padding: 8em 4em 4em 4em;
+    box-sizing: border-box;
+}
+
+.resumeColumns {
+    display: flex;
+    gap: 4em;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    
+}
+
+.resumeColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+     z-index: 1000;
+}
+
+.resumeDivider {
+    width: 1px;
+    align-self: stretch;
+    background: currentColor;
+}
+
+.resumeColumnTitle {
+    font-family: 'Skeina', sans-serif;
+    font-weight: 100;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+     letter-spacing: 0.09em;
+}
+
+.resumeCard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    padding: 1.5em;
+    border-radius: 1em;
+    background: rgba(90, 88, 85, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resumeCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.resumePeriod {
+    font-size: 0.8em;
+    opacity: 0.6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.resumeCardTitle {
+    font-family: 'Skeina', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.resumeCardSub {
+    font-size: 0.9em;
+    opacity: 0.7;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.resumeCardDesc {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-top: 0.5em;
+    opacity: 0.85;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media screen and (max-width: 800px) {
+    .resumePage {
+        padding: 6em 1.5em 3em 1.5em;
+    }
+
+    .resumeColumns {
+        flex-direction: column;
+    }
+
+    .resumeDivider {
+        width: 100%;
+        height: 1px;
+        align-self: auto;
+    }
+}

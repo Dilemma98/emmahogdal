@@ -1,0 +1,65 @@
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.page {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+* {
+  cursor: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body.lightMode {
+    background: linear-gradient(135deg, #f5f3f3 0%, #d9d9d3 50%, #f0f5ee 100%);
+    background-attachment: scroll;
+    color: #45483cf9;
+}
+
+body.darkMode {
+    background: linear-gradient(135deg, #474a3ff9 0%, #363830 50%, #4a4e40 100%);
+    background-attachment: scroll;
+    color: white;
+}
+
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    min-height: 100dvh;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.bubble-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+body.lightMode .bubble {
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+body.darkMode .bubble {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}

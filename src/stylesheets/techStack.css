@@ -1,0 +1,35 @@
+.techStack {
+  top: 55%;
+  left: 18.5%;
+  z-index: 1;
+  width: 20%;
+  position: absolute;
+}
+
+.tech-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.tech-bubbles span {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+  border: 1px solid currentColor;
+  color: inherit;
+  opacity: 0.7;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.tech-bubbles span:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  background-color: rgba(128, 128, 128, 0.15);
+  /* color: #ea7e6b; */
+}

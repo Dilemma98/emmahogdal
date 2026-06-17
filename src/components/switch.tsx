@@ -24,16 +24,17 @@ const Switch = () => {
 
     const darkModeSwitch = () => setDarkMode(!darkMode);
 
-    return createPortal(
-        <div className="darkmodeLightmodeBtn" onClick={darkModeSwitch}>
-            {darkMode ? (
-                <i className="fa-solid fa-sun"></i>
-            ) : (
-                <i className="fa-solid fa-moon"></i>
-            )}
-        </div>,
-        document.body
-    );
+   return createPortal(
+    <label className="toggle">
+        <input 
+            type="checkbox" 
+            checked={darkMode} 
+            onChange={darkModeSwitch} 
+        />
+        <span className="slider"></span>
+    </label>,
+    document.body
+);
 }
 
 export default Switch;

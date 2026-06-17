@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type { Project } from "./portfolio";
+import type { Project } from "./projects";
 
 const ProjectImage = ({ project }: { project: Project }) => {
   const images = project.images ?? [project.image];

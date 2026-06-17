@@ -1,48 +1,18 @@
-import { NavLink , Link} from "react-router-dom";
 import "../stylesheets/header.css";
+import { NavLink } from "react-router-dom"
 
-const Header = () => {
+export default function Header() {
   return (
-    <header className="header">
-      <h1>
-        <Link to="/">Emma Högdal</Link>
-      </h1>
-      
-
-      <nav className="navBar">
-       
-        <ul>
-          <li>
-            <NavLink
-              to="/portfolio"
-              className={({ isActive }) => isActive ? "active" : ""}
-            >
-              Portfolio
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/education"
-              className={({ isActive }) => isActive ? "active" : ""}
-            >
-              Education
-            </NavLink>
-          </li>
-
-          <li>
-            <NavLink
-              to="/workexperience"
-              className={({ isActive }) => isActive ? "active workLink" : "workLink"}
-            >
-              <span className="desktopText">Work Experience</span>
-              <span className="mobileText">Work Exp.</span>
-            </NavLink>
-          </li>
+    <header>
+      <nav className="navbar">
+        <ul className="nav-links">
+          <li><NavLink to="home" className="darkMode" >Hem</NavLink></li>
+          <li><NavLink to="projects" className={({ isActive}) => isActive ? "active" : "darkMode"} >Projekt</NavLink></li>
+          <li><NavLink to="resume" className={({ isActive}) => isActive ? "active" : "darkMode"} >CV</NavLink></li>
+          <li><NavLink to="contact" className={({ isActive}) => isActive ? "active" : "darkMode"} >Kontakt</NavLink></li>
+          <li><NavLink to="about" className={({ isActive}) => isActive ? "active" : "darkMode"} >Om mig</NavLink></li>
         </ul>
       </nav>
     </header>
   );
-};
-
-export default Header;
+}

@@ -1,0 +1,50 @@
+.aboutImg, .boatImg, .bagImg, .geocachingImg, .deskImg{
+    border-radius: 2em;
+     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.338); 
+     opacity: 0.85;
+          outline: 1.5px solid rgba(255, 255, 255, 0.3);
+  outline-offset: 4px;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.2));
+}
+
+.aboutImg:hover, .bagImg:hover, .geocachingImg:hover, .deskImg:hover{
+    opacity: 1;
+}
+.aboutImg{
+     width: 20em;
+    transform: rotate(10deg);
+    position: absolute;
+    top: 20%;
+    right: 6%;
+}
+.bagImg{
+ width: 12em;
+ position: absolute;
+ top: 60%;
+ right: 10%;
+ transform: rotate(-7deg);
+}
+.geocachingImg{
+    width: 15em;
+    position: absolute;
+    bottom: 10%;
+    left: 8%;
+    transform: rotate(2deg);
+}
+.deskImg{
+    width: 15em;
+     position: absolute;
+    top: 15%;
+    left: 6%;
+    transform: rotate(-4deg);
+}
+
+.text{
+    position: absolute;
+    width: 35%;
+    top: 20%;
+    left: 30%;
+    line-height: 1.6em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}

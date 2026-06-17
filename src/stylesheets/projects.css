@@ -1,0 +1,181 @@
+#portfolio {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    text-align: center;
+    z-index: 0;
+}
+.projectGroup {
+    display: flex;
+    align-items: flex-start;
+}
+.projectGroup.one{
+     margin-top: 3em;
+}
+.featuredOrNotHeader {
+    width: 2em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-top: 20vh;
+    font-family: 'Skeina', sans-serif;
+    font-size: 1.8em;
+    font-weight: 100;
+    writing-mode: horizontal-tb;
+    position: sticky;
+    top: 0;
+    left: 3em;
+    height: 100vh;
+    flex-shrink: 0;
+}
+
+.projectSlides {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 3em; */
+}
+
+/* ===================== */
+/* HEADERS */
+/* ===================== */
+.featuredOrNotHeader {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Skeina', sans-serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    position: relative;
+    z-index: 1;
+    scroll-snap-align: center;
+}
+
+/* ===================== */
+/* SLIDE */
+/* ===================== */
+.projectSlide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectSlideBg {
+    position: absolute;
+    inset: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.55);
+}
+
+.projectSlide.featured .projectSlideBg {
+    background-size: auto 80%;
+}
+
+.projectSlide:not(.featured) .projectSlideBg {
+    background-size: 70% auto;
+}
+
+/* ===================== */
+/* CONTENT */
+/* ===================== */
+.projectSlideContent {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: #fff;
+    
+}
+
+.projectSlideContent h3 {
+    font-family: 'Skeina', sans-serif;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+/* ===================== */
+/* TAGS */
+/* ===================== */
+.projectTags {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    justify-content: center;
+    margin: 0.5em 0 1em 0;
+}
+
+.tag {
+    font-size: 1.2em;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid currentColor;
+    color: currentColor;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ===================== */
+/* LINKS */
+/* ===================== */
+#portfolio a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #fff;
+    background: #545454;
+    padding: 0.5em 1em;
+    border-radius: 5em;
+    transition: background 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#portfolio a:hover {
+    background: #4a4a4a;
+    transform: scale(1.1);
+}
+
+.privateNote {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+/* ===================== */
+/* BADGE */
+/* ===================== */
+.workingOnBadge {
+    position: absolute;
+    top: 5em;
+    right: 3em;
+    font-size: 12px !important;
+    font-weight: bold;
+    padding: 6px 16px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 2em;
+}
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+@media screen and (max-width: 800px) {
+    .projectSlideContent h3 {
+        font-size: 1.8em;
+    }
+
+    .projectSlide:not(.featured) {
+        height: 40vh;
+    }
+}

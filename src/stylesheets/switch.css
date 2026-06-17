@@ -1,20 +1,46 @@
-.darkmodeLightmodeBtn{
-    font-size: 2.5em;
+.toggle {
     position: fixed;
-    right: 0.5em;
-    bottom: 0.5em;
-    z-index: 999;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
-    transition: transform 0.2s ease;
+    top: 1em;
+    right: 1em;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-.darkmodeLightmodeBtn:hover {
-    /* cursor: pointer; */
-    transform: translateY(-4px);
+.toggle input {
+    display: none;
+    
 }
 
-@media screen and (max-width: 800px) {
-    .darkmodeLightmodeBtn{
-        font-size: 2em;
-    }
+.slider {
+    width: 3em;
+    height: 1.5em;
+    background-color: #ffffff;
+    border-radius: 999px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px rgba(117, 119, 115, 0.589);
 }
+
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 50%;
+    background-color: #2e3028f9;
+    /* background-color: rgb(198, 198, 198); */
+    top: 0.125em;
+    left: 0.125em;
+    transition: transform 0.3s ease;
+}
+
+.toggle input:checked + .slider {
+    background-color: rgb(198, 198, 198);
+}
+
+.toggle input:checked + .slider::before {
+    transform: translateX(24px);
+}
+
+
