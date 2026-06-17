@@ -20,5 +20,12 @@
     "school": "Komvux Kumla",
     "type": "Fristående kurs",
     "description": "Grundläggande webbutveckling med HTML och CSS."
+  },
+  {
+    "period": "Aug 2014 - Juni 2017",
+    "title": "Samhällsvetenskapsprogrammet",
+    "school": "Slottegymnasiet",
+    "type": "Ljusdal",
+    "description": "Inriktning mot samhällsvetenskap, psykologi och språk."
   }
 ]
