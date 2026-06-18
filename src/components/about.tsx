@@ -2,6 +2,7 @@ import Img from "../assets/image.webp";
 import BagImg from "../assets/bagImg.webp";
 import GeocachingImg from "../assets/geocachingImg.webp";
 import DeskImg from "../assets/deskImg.webp";
+import CodingImg from "../assets/coding.webp";
 
 import "../stylesheets/about.css";
 
@@ -32,7 +33,7 @@ export default function About() {
         <img src={Img} alt="Pic of Emma and her daughter" className="aboutImg" />
         <img src={GeocachingImg} className="geocachingImg" />
         <img src={BagImg} className="bagImg" />
-        <img src={DeskImg} className="deskImg" />
+        <img src={CodingImg} className="codingImg" />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-.aboutImg, .boatImg, .bagImg, .geocachingImg, .deskImg{
+.aboutImg, .boatImg, .bagImg, .geocachingImg, .codingImg{
     border-radius: 2em;
      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.338); 
      opacity: 0.85;
@@ -7,14 +7,14 @@
   filter: drop-shadow(0 8px 24px rgba(0,0,0,0.2));
 }
 
-.aboutImg:hover, .bagImg:hover, .geocachingImg:hover, .deskImg:hover{
+.aboutImg:hover, .bagImg:hover, .geocachingImg:hover, .codingImg:hover{
     opacity: 1;
 }
-.aboutImg{
-     width: 20em;
+.codingImg{
+     width: 15em;
     transform: rotate(10deg);
     position: absolute;
-    top: 20%;
+    top: 13%;
     right: 6%;
 }
 .bagImg{
@@ -31,12 +31,12 @@
     left: 8%;
     transform: rotate(2deg);
 }
-.deskImg{
-    width: 15em;
+.aboutImg{
+    width: 18em;
      position: absolute;
-    top: 15%;
+    top: 10%;
     left: 6%;
-    transform: rotate(-4deg);
+    transform: rotate(-8deg);
 }
 
 .text{
