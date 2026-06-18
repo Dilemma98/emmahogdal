@@ -1,4 +1,4 @@
-import imgMe from "../assets/me.png";
+import imgMe from "../assets/me.webp";
 import "../stylesheets/imgMe.css";
 
 export default function ImgMe() {

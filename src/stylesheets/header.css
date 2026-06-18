@@ -28,13 +28,27 @@
     transition: color 0.3s ease;
     /* text-shadow: 0 0 2px rgb(117, 119, 115); */
 }
+
 .navbar .nav-links li a.darkMode {
     color: inherit;
 }
+
 .navbar .nav-links li a.lightMode {
     color: inherit;
 }
 
-.nav-links li:hover, .active {
+.nav-links li:hover,
+.active {
     color: #ff6347;
 }
+
+/* @media (max-width: 1024px) {
+
+    .navbar {
+        left: 17%;
+    }
+
+    .nav-links li a {
+        font-size: 1em;
+    }
+} */

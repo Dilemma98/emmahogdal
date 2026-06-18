@@ -1,7 +1,7 @@
 import "../stylesheets/projects.css";
 import { useEffect, useState } from "react";
-import Switch from "./switch";
-import ProjectImage from "./projectImage";
+// import Switch from "./switch";
+// import ProjectImage from "./projectImage";
 
 export interface Project {
   title: string;

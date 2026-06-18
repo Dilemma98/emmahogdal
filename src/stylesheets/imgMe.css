@@ -35,3 +35,15 @@
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
 }
+
+/* @media (max-width: 1024px) {
+    .imgMe{
+        width: 10%;
+        top: 15%;
+        right: 30%;
+    }
+
+    .meImage{
+    width: 14em;
+    }
+} */

@@ -1,7 +1,7 @@
-import Img from "../assets/image.png";
-import BagImg from "../assets/bagImg.jpg";
-import GeocachingImg from "../assets/geocachingImg.jpeg";
-import DeskImg from "../assets/deskImg1.jpg";
+import Img from "../assets/image.webp";
+import BagImg from "../assets/bagImg.webp";
+import GeocachingImg from "../assets/geocachingImg.webp";
+import DeskImg from "../assets/deskImg.webp";
 
 import "../stylesheets/about.css";
 
@@ -29,13 +29,7 @@ export default function About() {
         </p>
       </div>
       <div className="images">
-        <img
-          src={Img}
-          alt="Pic of Emma and her daughter"
-          className="aboutImg"
-        />
-        {/* <img src={ForrestImg} className="forrestImg" /> */}
-        {/* <img src={BoatImg} className="boatImg" /> */}
+        <img src={Img} alt="Pic of Emma and her daughter" className="aboutImg" />
         <img src={GeocachingImg} className="geocachingImg" />
         <img src={BagImg} className="bagImg" />
         <img src={DeskImg} className="deskImg" />

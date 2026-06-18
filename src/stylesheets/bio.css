@@ -7,10 +7,6 @@
     position: absolute;
     top: 26%;
     left: 16%;
-    /* border: 1px solid currentColor;
-    padding: 1em;
-    border-radius: 0 0 100px 100px;
-     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.238); */
 }
 .bioTitle, .bioSubtitle {
   margin: 0.3em;
@@ -52,3 +48,15 @@
   display: inline-block;
   animation: colorFlash 0.18s steps(1) both;
 }
+/* @media (max-width: 1024px) {
+.bio{
+  top: 15%;
+  left: 10%;
+}
+.bioTitle{
+  font-size: 2em;
+}
+.bioSubtitle{
+  font-size: 1.5em;
+}
+} */
