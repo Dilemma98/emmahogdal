@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
       style={{ backgroundImage: `url(${import.meta.env.BASE_URL}${project.images?.[0] ?? project.image})` }}
     />
     <div className="projectSlideContent">
-      {project.inProgress && <div className="workingOnBadge">In progress</div>}
+      {project.inProgress && <div className="workingOnBadge">Pågående</div>}
       <h3>{project.title}</h3>
       <div className="projectTags">
         {project.tags?.map((tag) => (
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }: { project: Project }) => (
           </a>
         )}
         {!project.link && project.privaterepo && (
-          <p className="privateNote">Codebase not publicly available.</p>
+          <p className="privateNote">Kodbas inte offentligt tillgänglig.</p>
         )}
       </div>
     </div>
@@ -60,7 +60,7 @@ const Portfolio = () => {
   return (
    <section id="portfolio">
   <div className="projectGroup one">
-    <h3 className="featuredOrNotHeader">Featured projects</h3>
+    <h3 className="featuredOrNotHeader">Utvalda projekt</h3>
     <div className="projectSlides">
       {featuredProjects.map((project, i) => (
         <ProjectCard key={`featured-${i}`} project={project} />
@@ -69,7 +69,7 @@ const Portfolio = () => {
   </div>
 
   <div className="projectGroup">
-    <h3 className="featuredOrNotHeader">Other projects</h3>
+    <h3 className="featuredOrNotHeader">Övriga projekt</h3>
     <div className="projectSlides">
       {otherProjects.map((project, i) => (
         <ProjectCard key={`other-${i}`} project={project} />

@@ -1,7 +1,6 @@
 import Img from "../assets/image.webp";
 import BagImg from "../assets/bagImg.webp";
 import GeocachingImg from "../assets/geocachingImg.webp";
-import DeskImg from "../assets/deskImg.webp";
 import CodingImg from "../assets/coding.webp";
 
 import "../stylesheets/about.css";
