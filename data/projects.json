@@ -34,7 +34,7 @@
     "link": "https://mini-chat-ruby.vercel.app/",
     "featured": true,
     "inProgress": false,
-    "live": true,
+    "live": false,
     "tags": ["React", "TypeScript", "Node.js", "Express", "Supabase", "WebSockets"]
   },
   {
