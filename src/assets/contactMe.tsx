@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./contactMe.css";
-import backgroundImg from "./imgs/bgHeader.png";
 
 // Byt ut dessa mot dina egna uppgifter
 const EMAIL = "emma.h98@outlook.com";

@@ -16,22 +16,25 @@ html {
   scrollbar-width: none;
 }
 
+
 body {
   color: var(--text);
   min-height: 100vh;
   background-color: var(--bg-dark);
   background-image:
-    /* varm glöd uppe till höger */
-    radial-gradient(ellipse at 85% 0%, rgba(224, 138, 154, 0.18), transparent 50%),
-    /* djup nere till vänster */
-    radial-gradient(ellipse at 0% 100%, rgba(120, 30, 55, 0.45), transparent 55%),
-    /* fint prickraster, som ett rutnät i en editor */
-    radial-gradient(rgba(244, 230, 232, 0.07) 1px, transparent 1px),
-    /* grundton */
-    linear-gradient(160deg, #3a1822 0%, #1f0d13 100%);
+    /* dämpad varm glöd uppe till höger */
+    radial-gradient(ellipse at 85% 0%, rgba(190, 100, 120, 0.12), transparent 50%),
+    /* djup vinröd skugga nere till vänster */
+    radial-gradient(ellipse at 0% 100%, #4d102673, transparent 55%),
+    /* diskret prickraster */
+    radial-gradient(rgba(244, 230, 232, 0.06) 1px, transparent 1px),
+    /* mörkare grundton */
+    linear-gradient(160deg, #281018 0%, #10070b 100%);
   background-size: auto, auto, 28px 28px, auto;
   background-attachment: fixed;
 }
+
+
 
 /* Textmarkering i accentfärgen */
 ::selection {
@@ -71,7 +74,7 @@ body {
 .contactText h3::after {
   content: "_";
   color: var(--text);
-  margin-left: 0.1em;
+  margin-left: 0.2em;
   animation: blink 1.1s steps(1) infinite;
 }
 
