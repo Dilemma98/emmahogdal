@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Geocaching app",
+    "description": "Personal geocaching app built with React Native, Expo, and TypeScript. Imports GPX files from Geocaching.com, parses cache data including logs, and displays them on an interactive map with custom markers per cache type. Features GPS-based navigation, SQLite for offline storage, Zustand for state management, and automatic detection of found caches based on username matching in GPX logs.",
+    "images": [
+      "images/gc1.png",
+      "images/gc2.png",
+      "images/gc3.png"
+    ],
+    "link": "https://github.com/Dilemma98/GeocachingApp.git",
+    "featured": true,
+    "inProgress": false,
+    "tags": ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"]
+  },
+  {
+    "title": "CRM application (Notyfile)",
+    "description": "Mobile CRM application developed at Notyfile using React Native, Expo, and TypeScript. Built for real-world usage and integrated with an existing backend API featuring encrypted data handling. The app includes activity management, meeting booking, customer and contact management, and a social feed. All structured around reusable components and shared React contexts for maintainable and scalable architecture.",
+    "images": [
+      "images/login.png",
+      "images/activity.png",
+      "images/meeting.png"
+    ],
+    "image": "images/login.png",
+    "link": "",
+    "featured": true,
+    "inProgress": false,
+    "privaterepo": true,
+    "tags": ["React Native", "Expo", "TypeScript", "REST API", "WebSockets"]
+  },
+  {
+    "title": "InnoviaHub",
+    "description": "Fullstack application for office booking and user management built with React and .NET 9. Implements role-based access control with admin and user accounts, enabling different permissions and workflows. Includes real-time updates for booking changes to ensure synchronized user experience.",
+    "image": "images/InnoviaHub.png",
+    "link": "https://github.com/Dilemma98/InnoviaHub",
+    "featured": true,
+    "inProgress": false,
+    "tags": ["React", "TypeScript", ".NET 9", "REST API", "SignalR"]
+  },
+  {
+    "title": "FrienDate",
+    "description": "Application that helps friends coordinate schedules and discover activities based on weather conditions and shared availability. Focused on usability and smart activity suggestions.",
+    "image": "images/FrienDate.png",
+    "link": "https://github.com/Dilemma98/FrienDate",
+    "featured": false,
+    "inProgress": false,
+    "tags": ["React", "TypeScript", "Vite", "Google Calendar API", "OAuth"]
+  }
+]

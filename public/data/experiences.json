@@ -1,0 +1,66 @@
+[
+  {
+    "period": "Jun 2026 – ",
+    "title": "Brevbärare",
+    "place": "PostNord, Kumla",
+    "type": "work",
+    "description": "Delar ut post och paket i Kumla med eget ansvar för planering och kvalitet. Daglig kundkontakt.",
+    "current": true
+  },
+  {
+    "period": "Nov 2025 – Maj 2026",
+    "title": "Apputvecklare (LIA)",
+    "place": "Notyfile, Örebro",
+    "type": "work",
+    "description": "Utvecklade självständigt en mobilapp som utökar företagets CRM-system, med React Native, TypeScript och Expo. Ansvarade för design, arkitektur och implementation gentemot befintligt API."
+  },
+  {
+    "period": "Aug 2024 – Maj 2026",
+    "title": "Webbutveckling .NET (YH)",
+    "place": "Campus Värnamo",
+    "type": "education",
+    "description": "Tvåårig utbildning inom fullstackutveckling med C#, .NET, React och TypeScript. Databaser, agila metoder och 5 månaders LIA."
+  },
+  {
+    "period": "Jun 2023 – Aug 2024",
+    "title": "Löneadministratör",
+    "place": "Kumla kommun",
+    "type": "work",
+    "description": "Löneadministration för tim- och månadsanställda i PersonecWeb, arbetsgivarintyg och inkomstuppgifter till Försäkringskassan."
+  },
+  {
+    "period": "Sep 2023 – Nov 2023",
+    "title": "Programmering och webbutveckling",
+    "place": "Komvux Kumla",
+    "type": "education",
+    "description": "Fristående kurser i C# (objektorienterad programmering) samt HTML och CSS. Här började vägen mot utvecklaryrket."
+  },
+  {
+    "period": "Apr 2023 – Sep 2023",
+    "title": "Barnskötare",
+    "place": "Kumla kommun",
+    "type": "work",
+    "description": "Stöttade barn i åldrarna 3–6 år i dagliga aktiviteter inom förskoleverksamheten."
+  },
+  {
+    "period": "2022",
+    "title": "Föräldraledig",
+    "place": "",
+    "type": "work",
+    "description": "Hemma med barn. Här väcktes intresset för programmering."
+  },
+  {
+    "period": "2017 – 2021",
+    "title": "Brevbärare",
+    "place": "PostNord",
+    "type": "work",
+    "description": "Sorterade och delade ut post och paket med bil på flera orter under fyra år."
+  },
+  {
+  "period": "2014 – 2017",
+  "title": "Samhällsvetenskapsprogrammet",
+  "place": "Slottegymnasiet, Ljusdal",
+  "type": "education",
+  "description": "Inriktning mot samhällsvetenskap, psykologi och språk."
+}
+]

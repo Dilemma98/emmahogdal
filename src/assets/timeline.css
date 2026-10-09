@@ -1,0 +1,166 @@
+/* ===== Sektionen ===== */
+.timeline {
+  box-sizing: border-box;
+  min-height: 100dvh;
+  padding: clamp(1em, 4dvh, 2.5em) 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.timelineColumns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2em;
+  width: 100%;
+  max-width: 1200px;
+  margin: 6em auto 0;
+  align-items: start;
+}
+
+.timelineColumn {
+  text-align: left;
+}
+
+.timelineColumn.span2 {
+  grid-column: span 2;
+}
+
+.timelineColTitle {
+  margin: 0 0 0.6em 1.2em;
+  font-family: 'amoera', sans-serif;
+  font-size: 2.5em;
+  text-align: left;
+}
+
+.timelineSub {
+  display: grid;
+  gap: 2em;
+  align-items: start;
+}
+.timelineSub.cols1 { grid-template-columns: 1fr; }
+.timelineSub.cols2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+/* ===== Tidslinjen ===== */
+.timelineList {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 2em;
+  list-style: none;
+}
+
+/* den vertikala linjen */
+.timelineList::before {
+  content: "";
+  position: absolute;
+  left: 0.55em;
+  top: 0.5em;
+  bottom: 0.5em;
+  width: 2px;
+  background: rgba(244, 230, 232, 0.22);
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: clamp(0.6em, 2dvh, 1.2em);
+}
+.timelineItem:last-child {
+  margin-bottom: 0;
+}
+
+.timelineDot {
+  position: absolute;
+  left: -2em;
+  top: 0.55em;
+  width: 1.1em;
+  height: 1.1em;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid var(--bg-dark, #1f0d13);
+  background: #6fb484;
+  box-shadow: 0 0 0 2px rgb(138, 224, 164, 0.35);
+}
+.timelineItem.education .timelineDot {
+  background: #8fa8dc;
+  box-shadow: 0 0 0 2px rgba(120, 150, 210, 0.35);
+}
+
+/* ===== Kort ===== */
+.timelineCard {
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  background: rgba(244, 230, 232, 0.06);
+  border: 1px solid rgba(244, 230, 232, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  backdrop-filter: blur(0.07em);
+}
+.timelineCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(224, 138, 154, 0.45);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.timelinePeriod {
+  display: inline-block;
+  padding: 0.15em 0.8em;
+  border-radius: 999px;
+  font-size: 0.8em;
+  color: #fff;
+  background: #6fb48437;
+  border: 1px solid #6fb484;
+}
+
+.timelineItem.education .timelinePeriod {
+  background-color: rgba(120, 150, 210, 0.18);
+  border-color: rgba(120, 150, 210, 0.6);
+  color: #d3def5;
+}
+
+.timelineNow {
+  margin-left: 0.5em;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--accent, #e08a9a);
+}
+
+.timelineCard h5 {
+  margin: 0.3em 0 0.1em;
+  font-family: 'amoera', sans-serif;
+  font-size: 1.2em;
+}
+
+.timelinePlace {
+  margin: 0 0 0.3em;
+  font-size: 0.9em;
+  color: rgba(244, 230, 232, 0.7);
+}
+
+.timelineDesc {
+  margin: 0;
+  font-size: clamp(0.85em, 1.9dvh, 0.95em);
+  line-height: 1.4;
+}
+
+/* ===== Smalare skärmar ===== */
+@media (max-width: 1000px) {
+  .timeline {
+    justify-content: flex-start;   /* högre än skärmen, börja uppifrån */
+  }
+  .timelineColumns {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+  .timelineColumn.span2 {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .timelineSub.cols2 {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+}

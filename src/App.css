@@ -1,0 +1,18 @@
+* {
+  cursor: none;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.section > * {
+  flex: 1 0 auto;   /* innehållet fyller sektionen */
+}
+.section:focus-visible {
+  outline: transparent;                 /* ingen ram runt hela sektionen */
+}

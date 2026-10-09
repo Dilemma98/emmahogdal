@@ -1,0 +1,143 @@
+@import url('https://fonts.cdnfonts.com/css/amoera');
+
+.projects {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.projects h3 {
+  font-size: 2.6em;
+  font-family: 'amoera', sans-serif;
+}
+
+.projects h4 {
+  color: #f4e6e8;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  max-width: 1200px;
+  margin: 2em auto 0;
+}
+
+.projectCard {
+  position: relative;
+  isolation: isolate;
+  min-height: 280px;
+  border-radius: 1em;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.projectCard.featured {
+  min-height: 340px;
+}
+
+.projectCard:hover .projectBg {
+  transform: scale(1.06);
+}
+
+.projectCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.projectCard:focus-visible {
+  outline: 2px solid #e08a9a;
+  outline-offset: 4px;
+}
+
+.projectBg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.65;
+  transition: transform 0.6s ease;
+}
+
+.projectContent {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em;
+  color: #f4e6e8;
+  background: linear-gradient(
+    to top,
+    rgba(38, 15, 25, 0.97) 78%,
+    rgba(38, 15, 25, 0.78) 92%,
+    transparent 100%
+  );
+}
+
+.projectContent h4 {
+  margin: 0.3em 0;
+  font-family: 'amoera', sans-serif;
+  font-size: 1.4em;
+}
+
+.projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-bottom: 0.6em;
+}
+
+.chip {
+  padding: 0.05em 0.6em;
+  border-radius: 0.5em;
+  background: rgba(244, 230, 232, 0.1);
+  border: 1px solid rgba(244, 230, 232, 0.18);
+  color: #e9d9dd;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.1em 0.7em;
+  border-radius: 999px;
+  background: rgba(224, 138, 154, 0.18);
+  color: #f4e6e8;
+  font-size: 0.8em;
+}
+
+.privateNote {
+  margin: 0;
+  font-size: 0.85em;
+  color: rgba(244, 230, 232, 0.68);
+}
+
+.projectLink {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 1px solid rgba(244, 230, 232, 0.35);
+  border-radius: 999px;
+  background: rgba(38, 15, 25, 0.5);
+  color: #f4e6e8;
+  font-family: 'amoera', sans-serif;
+  font-size: 0.95em;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.projectLink:hover {
+  background: #e08a9a;
+  color: #260f19;
+  transform: translateY(-2px);
+}
+
+/* .projectContent button {
+  border: none;
+  background: transparent;
+} */

@@ -1,0 +1,66 @@
+.sideNav {
+  position: fixed;
+  right: -3.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.8em;
+}
+
+.navLine {
+  align-self: center;
+  width: 1px;
+  height: 22.5dvh;
+  background-color: #ffffff64;
+}
+
+.sideNav a {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  color: #ffffffef;
+  text-decoration: none;
+  font-family: 'amoera', sans-serif;
+}
+
+.navLabel {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.navDot {
+    margin-right: 6em;
+  width: 0.9em;
+  height: 0.9em;
+  box-sizing: border-box;
+  border: 2px solid  #ffffff8f;; 
+  border-radius: 50%;
+  background: transparent;
+  transform: scale(0.5);
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.sideNav a[aria-current="location"] .navLabel {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.sideNav a[aria-current="location"] .navDot {
+  background: #fff;
+  border-color: #fff;
+  transform: scale(1.1);
+}
+
+/* hover och tangentbord: text blir tydlig */
+.sideNav a:hover .navLabel,
+.sideNav a:focus-visible .navLabel {
+  opacity: 1;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .sideNav { display: none; }
+}
