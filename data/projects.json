@@ -9,7 +9,7 @@
     ],
     "link": "https://github.com/Dilemma98/GeocachingApp.git",
     "featured": true,
-    "inProgress": true,
+    "inProgress": false,
     "tags": ["React Native", "Expo", "TypeScript", "SQLite", "Zustand"]
   },
   {
@@ -28,21 +28,11 @@
     "tags": ["React Native", "Expo", "TypeScript", "REST API", "WebSockets"]
   },
   {
-    "title": "MiniChat",
-    "description": "Fullstack real-time chat application built with React, TypeScript, Node.js/Express, and Supabase. Implemented authentication, WebSocket-based communication, and a live demo mode. Focused on seamless real-time updates and efficient client synchronization without page reloads.",
-    "image": "images/MiniChat.png",
-    "link": "https://mini-chat-ruby.vercel.app/",
-    "featured": true,
-    "inProgress": false,
-    "live": false,
-    "tags": ["React", "TypeScript", "Node.js", "Express", "Supabase", "WebSockets"]
-  },
-  {
     "title": "InnoviaHub",
     "description": "Fullstack application for office booking and user management built with React and .NET 9. Implements role-based access control with admin and user accounts, enabling different permissions and workflows. Includes real-time updates for booking changes to ensure synchronized user experience.",
     "image": "images/InnoviaHub.png",
     "link": "https://github.com/Dilemma98/InnoviaHub",
-    "featured": false,
+    "featured": true,
     "inProgress": false,
     "tags": ["React", "TypeScript", ".NET 9", "REST API", "SignalR"]
   },
@@ -53,24 +43,6 @@
     "link": "https://github.com/Dilemma98/FrienDate",
     "featured": false,
     "inProgress": false,
-    "tags": ["React", "TypeScript", "Vite"]
-  },
-  {
-    "title": "SpaMedSpa",
-    "description": "Booking application for spa treatments built with React, TypeScript, Vite, and Tailwind CSS. Developed with a focus on responsive design and smooth user experience.",
-    "image": "images/StudioSpa.png",
-    "link": "https://github.com/Dilemma98/SpaMedSpa",
-    "featured": false,
-    "inProgress": false,
-    "tags": ["React", "TypeScript", "Vite", "Tailwind CSS"]
-  },
-  {
-    "title": "FilmStudio",
-    "description": "Fullstack movie rental application featuring a custom REST API, user authentication, and inventory management. Emphasized clean architecture and efficient data handling.",
-    "image": "images/FilmStudion.png",
-    "link": "https://github.com/Dilemma98/Filmstudion",
-    "featured": false,
-    "inProgress": false,
-    "tags": ["React", "TypeScript", ".NET", "REST API"]
+    "tags": ["React", "TypeScript", "Vite", "Google Calendar API", "OAuth"]
   }
 ]
