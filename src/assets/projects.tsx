@@ -6,6 +6,7 @@ interface Project {
   description: string;
   image: string;
   link: string;
+  liveLink?: string;
   featured: boolean;
   inProgress: boolean;
   privaterepo?: boolean;

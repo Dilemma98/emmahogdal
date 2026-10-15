@@ -1,4 +1,3 @@
-
 import "./header.css";
 import portrait from "./imgs/me.jpeg";
 
@@ -27,32 +26,36 @@ const categories = [
       { name: "CSS3", icon: "devicon-css3-plain colored" },
     ],
   },
- {
-  name: "Databas & API",
-  technologies: [
-    {
-      name: "Supabase",
-      icon: "devicon-supabase-plain colored",
-    },
-    {
-      name: "Swagger / OpenAPI",
-      icon: "devicon-swagger-plain colored",
-    },
-  ],
-},
   {
-  name: "Verktyg",
-  technologies: [
-    {
-      name: "Visual Studio Code",
-      icon: "devicon-vscode-plain colored",
-    },
-    {
-      name: "GitHub",
-      icon: "devicon-github-original",
-    },
-  ],
-},
+    name: "Databas & API",
+    technologies: [
+      {
+        name: "Supabase",
+        icon: "devicon-supabase-plain colored",
+      },
+      {
+        name: "Swagger / OpenAPI",
+        icon: "devicon-swagger-plain colored",
+      },
+    ],
+  },
+  {
+    name: "Verktyg",
+    technologies: [
+      {
+        name: "Visual Studio Code",
+        icon: "devicon-vscode-plain colored",
+      },
+      {
+        name: "GitHub",
+        icon: "devicon-github-original",
+      },
+      {
+        name: "Vercel",
+        icon: "devicon-vercel-original",
+      },
+    ],
+  },
 ];
 
 export default function Header() {
@@ -60,21 +63,14 @@ export default function Header() {
     <header>
       <div className="header-bg" />
 
-      <img
-        className="portrait"
-        src={portrait}
-        alt="Emma Högdal"
-      />
+      <img className="portrait" src={portrait} alt="Emma Högdal" />
 
       <h1>Emma Högdal</h1>
       <h2>.NET Developer</h2>
 
       <div className="stack-categories">
         {categories.map((category) => (
-          <section
-            className="stack-category"
-            key={category.name}
-          >
+          <section className="stack-category" key={category.name}>
             <h3>{category.name}</h3>
 
             <ul className="stack">

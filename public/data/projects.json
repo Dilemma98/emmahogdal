@@ -1,9 +1,10 @@
 [
-  {
+{
   "title": "KidsOS",
-  "description": "Child-friendly, tablet-focused web app designed to support creativity, play, and daily routines. Built with React, TypeScript, Vite, and CSS. Features interactive activities including a drawing studio with saved drawings, memory games, animal activities, stickers, daily routines, and a music studio. Developed using AI-assisted code generation, with iterative customization, integration, testing, and debugging.",
+  "description": "Child-friendly, tablet-focused web app designed to support creativity, play, and daily routines. Built with React, TypeScript, Vite, and CSS. Features interactive activities including a drawing studio, memory games, animal activities, stickers, daily routines, and a music studio. Developed using AI-assisted code generation, with iterative customization, integration, testing, and debugging.",
   "image": "images/KidsOS.png",
-  "link": "https://github.com/Dilemma98/KidsOS/tree/main",
+  "link": "https://github.com/Dilemma98/KidsOS",
+  "liveLink": "https://kids-os.vercel.app/",
   "featured": true,
   "inProgress": true,
   "tags": [
@@ -18,11 +19,7 @@
   {
     "title": "Geocaching app",
     "description": "Personal geocaching app built with React Native, Expo, and TypeScript. Imports GPX files from Geocaching.com, parses cache data including logs, and displays them on an interactive map with custom markers per cache type. Features GPS-based navigation, SQLite for offline storage, Zustand for state management, and automatic detection of found caches based on username matching in GPX logs.",
-    "images": [
-      "images/gc1.png",
-      "images/gc2.png",
-      "images/gc3.png"
-    ],
+    "images": ["images/gc1.png", "images/gc2.png", "images/gc3.png"],
     "link": "https://github.com/Dilemma98/GeocachingApp.git",
     "featured": true,
     "inProgress": false,
@@ -31,11 +28,7 @@
   {
     "title": "CRM application (Notyfile)",
     "description": "Mobile CRM application developed at Notyfile using React Native, Expo, and TypeScript. Built for real-world usage and integrated with an existing backend API featuring encrypted data handling. The app includes activity management, meeting booking, customer and contact management, and a social feed. All structured around reusable components and shared React contexts for maintainable and scalable architecture.",
-    "images": [
-      "images/login.png",
-      "images/activity.png",
-      "images/meeting.png"
-    ],
+    "images": ["images/login.png", "images/activity.png", "images/meeting.png"],
     "image": "images/login.png",
     "link": "",
     "featured": true,
