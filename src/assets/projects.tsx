@@ -34,19 +34,30 @@ function ProjectCard({ project }: { project: Project }) {
             </span>
           ))}
         </div>
-        {project.link ? (
+        {project.live && (
+          <a
+            className="projectLink"
+            href={project.liveLink}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Live ↗
+          </a>
+        )}
+
+        {project.link && (
           <a
             className="projectLink"
             href={project.link}
             target="_blank"
             rel="noreferrer"
           >
-            {project.live ? "Live" : "GitHub"}
+            GitHub ↗
           </a>
-        ) : (
-          project.privaterepo && (
-            <p className="privateNote">Kodbasen är inte offentlig.</p>
-          )
+        )}
+
+        {!project.link && project.privaterepo && (
+          <p className="privateNote">Kodbasen är inte offentlig.</p>
         )}
       </div>
     </article>
