@@ -1,5 +1,21 @@
 [
   {
+  "title": "KidsOS",
+  "description": "Child-friendly, tablet-focused web app designed to support creativity, play, and daily routines. Built with React, TypeScript, Vite, and CSS. Features interactive activities including a drawing studio with saved drawings, memory games, animal activities, stickers, daily routines, and a music studio. Developed using AI-assisted code generation, with iterative customization, integration, testing, and debugging.",
+  "image": "images/KidsOS.png",
+  "link": "https://github.com/Dilemma98/KidsOS/tree/main",
+  "featured": true,
+  "inProgress": true,
+  "tags": [
+    "React",
+    "TypeScript",
+    "Vite",
+    "CSS",
+    "LocalStorage",
+    "AI-Assisted Development"
+  ]
+},
+  {
     "title": "Geocaching app",
     "description": "Personal geocaching app built with React Native, Expo, and TypeScript. Imports GPX files from Geocaching.com, parses cache data including logs, and displays them on an interactive map with custom markers per cache type. Features GPS-based navigation, SQLite for offline storage, Zustand for state management, and automatic detection of found caches based on username matching in GPX logs.",
     "images": [
