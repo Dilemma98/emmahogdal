@@ -79,6 +79,286 @@
   );
 }
 
+/* Klickbara projektkort */
+
+.projectCard {
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  border-color: rgba(224, 138, 154, 0.55);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.projectCard:focus-visible {
+  outline: 2px solid var(--accent, #e08a9a);
+  outline-offset: 4px;
+}
+
+.projectCardHint {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 1.2rem;
+  color: var(--accent, #e08a9a);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  transition: gap 0.2s ease;
+}
+
+.projectCard:hover .projectCardHint {
+  gap: 0.75rem;
+}
+
+/* Modalens bakgrund */
+
+
+.projectModalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(15, 5, 10, 0.88);
+  animation: projectFadeIn 0.12s ease-out;
+}
+
+
+/* Själva modalrutan */
+
+.projectModal {
+  position: relative;
+  width: min(100%, 820px);
+  max-height: 88vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  color: var(--text, #f4e6e8);
+  background:
+    radial-gradient(
+      ellipse at top right,
+      rgba(224, 138, 154, 0.12),
+      transparent 55%
+    ),
+    #28121d;
+  border: 1px solid rgba(244, 230, 232, 0.16);
+  border-radius: 22px;
+  box-shadow: 0 25px 100px rgba(0, 0, 0, 0.5);
+  animation: projectSlideIn 0.25s ease;
+}
+
+.projectModalClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  color: var(--text, #f4e6e8);
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(244, 230, 232, 0.18);
+  border-radius: 50%;
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.projectModalClose:hover {
+  background: rgba(224, 138, 154, 0.2);
+  transform: rotate(90deg);
+}
+
+.projectModalHeader {
+  padding: 2.5rem 2.5rem 2rem;
+  border-bottom: 1px solid rgba(244, 230, 232, 0.1);
+}
+
+.projectModalEyebrow {
+  margin: 0 0 0.5rem;
+  color: var(--accent, #e08a9a);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+}
+
+.projectModalHeader h2 {
+  margin: 0 3rem 1.2rem 0;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.projectModal .projectTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.projectModalBody {
+  padding: 2rem 2.5rem 2.5rem;
+}
+
+.projectModalBody h3 {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+}
+
+.projectModalDescription {
+  margin: 0;
+  color: var(--text-dim, rgba(244, 230, 232, 0.8));
+  font-size: 1rem;
+  line-height: 1.85;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+}
+
+/* Projektbilder */
+
+.projectModalGallery {
+  margin-top: 2rem;
+}
+
+.projectModalImages {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.projectModalImages img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(244, 230, 232, 0.12);
+  border-radius: 12px;
+}
+
+.projectModalLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(244, 230, 232, 0.12);
+}
+
+.projectModalLinks .privateNote {
+  margin: 0;
+}
+
+/* Animationer */
+
+@keyframes projectFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes projectSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Mobilanpassning */
+
+@media (max-width: 600px) {
+  .projectModalBackdrop {
+    padding: 0.65rem;
+  }
+
+  .projectModal {
+    max-height: 92vh;
+    border-radius: 16px;
+  }
+
+  .projectModalHeader {
+    padding: 2rem 1.25rem 1.5rem;
+  }
+
+  .projectModalBody {
+    padding: 1.5rem 1.25rem 1.75rem;
+  }
+
+  .projectModalHeader h2 {
+    font-size: 1.8rem;
+  }
+
+  .projectModalImages {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projectModalBackdrop,
+  .projectModal {
+    animation: none;
+  }
+
+  .projectCard,
+  .projectCardHint,
+  .projectModalClose {
+    transition: none;
+  }
+}
+
+/* Snygg scrollbar i projektmodalen */
+.projectModal {
+  scrollbar-width: thin;
+  scrollbar-color: #a86b82 transparent;
+}
+
+/* Chrome, Edge och Safari */
+.projectModal::-webkit-scrollbar {
+  width: 7px;
+}
+
+.projectModal::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: 14px;
+}
+
+.projectModal::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #e08a9a,
+    #8d526e
+  );
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.projectModal::-webkit-scrollbar-thumb:hover {
+  background: #e08a9a;
+  background-clip: padding-box;
+}
+
+
 .projectContent h4 {
   margin: 0.3em 0;
   font-family: 'amoera', sans-serif;
